@@ -1,63 +1,77 @@
-import os
-
-# Always resolve paths relative to this file (backend/config/domains.py)
-# So BASE_DIR = backend/
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-def _data(path):
-    return os.path.join(BASE_DIR, "data", path)
-
 DOMAINS = {
-    "lending": {
-        "name": "Lending",
-        "description": "Loan approval and credit recommendation systems",
-        "color": "#0d6f73",
-        "label_column": "approved",
-        "sensitive_columns": ["gender", "region", "age_group"],
-        "feature_columns": [
-            "annual_income", "credit_score", "debt_to_income_ratio",
-            "employment_years", "loan_amount", "gender", "region", "age_group"
-        ],
-        "sample_dataset": _data(os.path.join("lending", "lending_data.csv")),
-        "gemini_context": "loan approval system",
-    },
+    # ── Original 4 ────────────────────────────────────────────────────────────
     "hiring": {
-        "name": "Hiring",
-        "description": "Candidate shortlisting and recruitment screening",
-        "color": "#6f52c8",
-        "label_column": "shortlisted",
-        "sensitive_columns": ["gender", "age_band", "college_tier"],
-        "feature_columns": [
-            "experience_years", "tech_score", "communication_score",
-            "gender", "age_band", "college_tier"
-        ],
-        "sample_dataset": _data(os.path.join("hiring", "hiring_data.csv")),
-        "gemini_context": "hiring and recruitment system",
+        "name":               "Hiring",
+        "description":        "Candidate shortlisting and recruitment screening",
+        "icon":               "👔",
+        "color":              "#6f52c8",
+        "sample_dataset":     "data/hiring/hiring_data.csv",
+        "label_column":       "shortlisted",
+        "sensitive_columns":  ["gender", "age_band", "college_tier"],
+    },
+    "lending": {
+        "name":               "Lending",
+        "description":        "Loan approval and credit recommendation systems",
+        "icon":               "💳",
+        "color":              "#0d6f73",
+        "sample_dataset":     "data/lending/lending_data.csv",
+        "label_column":       "approved",
+        "sensitive_columns":  ["gender", "region", "age_group"],
     },
     "healthcare": {
-        "name": "Healthcare",
-        "description": "Patient triage and treatment prioritization",
-        "color": "#a85f16",
-        "label_column": "high_priority",
-        "sensitive_columns": ["sex", "age_group", "insurance_status", "region"],
-        "feature_columns": [
-            "symptom_severity", "vitals_score", "wait_time_minutes",
-            "sex", "age_group", "insurance_status", "region"
-        ],
-        "sample_dataset": _data(os.path.join("healthcare", "healthcare_data.csv")),
-        "gemini_context": "healthcare triage and treatment system",
+        "name":               "Healthcare",
+        "description":        "Patient triage and treatment prioritization",
+        "icon":               "🏥",
+        "color":              "#a85f16",
+        "sample_dataset":     "data/healthcare/healthcare_data.csv",
+        "label_column":       "high_priority",
+        "sensitive_columns":  ["sex", "age_group", "insurance_status", "region"],
     },
     "insurance": {
-        "name": "Insurance",
-        "description": "Insurance risk scoring and claim approval",
-        "color": "#3d7a2a",
-        "label_column": "approved",
-        "sensitive_columns": ["age_group", "locality", "income_bracket"],
-        "feature_columns": [
-            "claim_history", "vehicle_age", "credit_score",
-            "age_group", "locality", "income_bracket"
-        ],
-        "sample_dataset": _data(os.path.join("insurance", "insurance_data.csv")),
-        "gemini_context": "insurance risk scoring and approval system",
+        "name":               "Insurance",
+        "description":        "Insurance risk scoring and claim approval",
+        "icon":               "🛡️",
+        "color":              "#3d7a2a",
+        "sample_dataset":     "data/insurance/insurance_data.csv",
+        "label_column":       "claim_approved",
+        "sensitive_columns":  ["gender", "age_group", "region"],
+    },
+
+    # ── New 4 ─────────────────────────────────────────────────────────────────
+    "education": {
+        "name":               "Education",
+        "description":        "University admission and scholarship selection",
+        "icon":               "🎓",
+        "color":              "#1a6fa8",
+        "sample_dataset":     "data/education/education_data.csv",
+        "label_column":       "admitted",
+        "sensitive_columns":  ["gender", "race", "income_band", "school_type", "first_generation"],
+    },
+    "criminal_justice": {
+        "name":               "Criminal Justice",
+        "description":        "Recidivism risk scoring and parole decisions",
+        "icon":               "⚖️",
+        "color":              "#8b1a1a",
+        "sample_dataset":     "data/criminal_justice/criminal_justice_data.csv",
+        "label_column":       "high_risk_score",
+        "sensitive_columns":  ["race", "gender", "age_group", "education_level"],
+    },
+    "housing": {
+        "name":               "Housing",
+        "description":        "Rental application approval and tenant screening",
+        "icon":               "🏠",
+        "color":              "#5a3e8a",
+        "sample_dataset":     "data/housing/housing_data.csv",
+        "label_column":       "rental_approved",
+        "sensitive_columns":  ["race", "gender", "age_group"],
+    },
+    "retail_credit": {
+        "name":               "Retail Credit",
+        "description":        "Credit card approval and limit assignment",
+        "icon":               "💰",
+        "color":              "#8a6a1a",
+        "sample_dataset":     "data/retail_credit/retail_credit_data.csv",
+        "label_column":       "credit_approved",
+        "sensitive_columns":  ["gender", "race", "age_group", "employment_status"],
     },
 }

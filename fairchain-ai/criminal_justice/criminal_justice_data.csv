@@ -1,0 +1,2001 @@
+race,gender,age_group,prior_offenses,charge_severity,employed,education_level,high_risk_score
+White,Male,46+,3,Felony,1,College,0
+Hispanic,Male,26-35,6,Misdemeanor,0,HS Diploma,1
+Black,Male,36-45,6,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,4,Violent,0,HS Diploma,1
+White,Male,18-25,6,Felony,0,College,1
+White,Male,46+,4,Felony,1,No HS,0
+Hispanic,Male,46+,5,Misdemeanor,1,No HS,1
+Hispanic,Male,36-45,4,Felony,1,No HS,1
+Black,Male,18-25,0,Misdemeanor,0,No HS,1
+White,Female,18-25,6,Misdemeanor,0,No HS,1
+Black,Male,46+,1,Violent,1,College,1
+Asian,Male,36-45,5,Misdemeanor,1,No HS,1
+Hispanic,Male,26-35,1,Misdemeanor,0,HS Diploma,1
+Asian,Male,46+,1,Misdemeanor,0,College,1
+Black,Male,18-25,6,Misdemeanor,0,HS Diploma,1
+Black,Female,18-25,6,Felony,0,No HS,1
+Hispanic,Male,46+,2,Misdemeanor,1,No HS,1
+Hispanic,Male,36-45,1,Felony,0,College,1
+White,Female,26-35,4,Felony,1,HS Diploma,1
+Hispanic,Female,26-35,1,Felony,0,HS Diploma,1
+Hispanic,Female,26-35,5,Misdemeanor,0,HS Diploma,1
+Hispanic,Female,36-45,5,Misdemeanor,0,No HS,0
+Black,Male,18-25,4,Felony,1,HS Diploma,1
+Black,Male,46+,7,Misdemeanor,1,No HS,1
+Hispanic,Male,36-45,4,Violent,1,College,1
+Black,Male,36-45,7,Felony,0,HS Diploma,1
+White,Male,18-25,2,Violent,0,College,1
+White,Female,36-45,7,Felony,1,HS Diploma,1
+Black,Male,46+,5,Misdemeanor,0,HS Diploma,1
+Black,Male,26-35,1,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,3,Violent,1,College,1
+White,Male,18-25,1,Misdemeanor,0,No HS,0
+Black,Male,36-45,3,Misdemeanor,0,HS Diploma,1
+Black,Female,46+,5,Violent,1,HS Diploma,1
+Hispanic,Female,18-25,2,Violent,1,HS Diploma,1
+Black,Male,46+,0,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,46+,2,Misdemeanor,0,HS Diploma,1
+White,Male,46+,2,Misdemeanor,1,No HS,0
+White,Male,36-45,3,Misdemeanor,1,College,1
+White,Male,26-35,2,Felony,1,College,0
+Hispanic,Male,46+,4,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,7,Misdemeanor,1,College,1
+Black,Female,26-35,2,Misdemeanor,0,HS Diploma,0
+Hispanic,Male,36-45,5,Misdemeanor,0,College,1
+White,Male,36-45,2,Violent,0,HS Diploma,1
+White,Female,26-35,3,Felony,1,No HS,0
+White,Male,26-35,5,Violent,0,College,1
+White,Female,36-45,2,Violent,1,College,1
+White,Female,46+,2,Misdemeanor,1,HS Diploma,1
+Asian,Male,46+,5,Felony,1,College,1
+Black,Male,18-25,5,Violent,1,No HS,1
+Black,Male,36-45,5,Violent,0,College,1
+Black,Female,36-45,1,Felony,1,HS Diploma,1
+White,Male,18-25,5,Felony,1,HS Diploma,1
+Asian,Male,46+,4,Felony,0,College,1
+Asian,Male,18-25,4,Violent,1,No HS,0
+Hispanic,Male,26-35,4,Violent,1,No HS,1
+White,Male,26-35,2,Felony,1,HS Diploma,1
+Hispanic,Male,46+,4,Misdemeanor,0,College,0
+White,Male,46+,1,Misdemeanor,0,No HS,0
+Black,Male,46+,0,Felony,0,HS Diploma,0
+Black,Female,46+,0,Misdemeanor,0,College,0
+White,Male,26-35,6,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,26-35,1,Misdemeanor,0,HS Diploma,0
+Asian,Male,26-35,6,Misdemeanor,1,College,1
+Hispanic,Male,36-45,7,Felony,0,HS Diploma,1
+White,Female,18-25,0,Misdemeanor,1,College,1
+White,Male,26-35,7,Violent,0,HS Diploma,1
+Asian,Male,46+,0,Misdemeanor,1,HS Diploma,0
+White,Male,26-35,3,Felony,1,HS Diploma,0
+Black,Male,18-25,2,Violent,0,No HS,0
+Black,Male,26-35,3,Felony,1,No HS,0
+White,Male,18-25,6,Violent,1,HS Diploma,1
+Hispanic,Male,36-45,3,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,1,Violent,1,HS Diploma,0
+Black,Male,18-25,0,Misdemeanor,1,HS Diploma,1
+White,Female,26-35,1,Violent,1,College,1
+White,Male,36-45,4,Misdemeanor,1,HS Diploma,0
+White,Male,46+,3,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,0,Felony,1,College,1
+Asian,Male,46+,2,Felony,1,HS Diploma,0
+Hispanic,Female,36-45,3,Misdemeanor,0,College,1
+Black,Female,18-25,0,Violent,1,College,1
+Hispanic,Male,36-45,4,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,46+,1,Misdemeanor,0,No HS,0
+Black,Male,36-45,7,Violent,0,HS Diploma,1
+Black,Male,18-25,0,Misdemeanor,1,College,0
+Hispanic,Male,46+,0,Misdemeanor,0,No HS,0
+Black,Female,36-45,3,Violent,0,College,1
+White,Female,18-25,0,Felony,1,HS Diploma,0
+Hispanic,Male,26-35,4,Misdemeanor,1,College,0
+White,Male,26-35,2,Felony,1,HS Diploma,1
+Hispanic,Male,26-35,4,Felony,0,HS Diploma,1
+Hispanic,Female,46+,0,Violent,0,HS Diploma,1
+Hispanic,Male,26-35,2,Felony,0,College,1
+White,Male,46+,7,Felony,1,HS Diploma,1
+Asian,Male,46+,4,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,2,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,26-35,5,Felony,1,College,1
+Black,Male,46+,3,Felony,1,HS Diploma,1
+White,Female,46+,0,Misdemeanor,1,College,0
+White,Male,26-35,2,Violent,1,College,0
+White,Male,46+,1,Misdemeanor,0,HS Diploma,1
+Black,Female,26-35,3,Misdemeanor,0,HS Diploma,1
+White,Female,26-35,0,Misdemeanor,1,College,0
+Black,Male,18-25,3,Felony,0,HS Diploma,0
+Black,Male,26-35,1,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,0,Violent,1,No HS,1
+White,Male,46+,3,Violent,1,No HS,1
+Black,Female,18-25,6,Misdemeanor,0,College,1
+Hispanic,Male,46+,3,Misdemeanor,1,No HS,1
+Black,Female,26-35,6,Misdemeanor,0,No HS,1
+White,Male,26-35,2,Misdemeanor,0,HS Diploma,1
+Black,Male,18-25,2,Felony,1,HS Diploma,0
+Black,Male,26-35,3,Violent,1,HS Diploma,1
+White,Male,18-25,2,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,0,Violent,1,HS Diploma,0
+Black,Male,18-25,2,Violent,0,No HS,1
+White,Male,26-35,0,Felony,0,HS Diploma,0
+White,Male,26-35,0,Felony,0,College,1
+Black,Male,36-45,0,Felony,1,College,0
+White,Male,36-45,0,Misdemeanor,0,No HS,1
+White,Male,46+,3,Felony,0,HS Diploma,0
+Hispanic,Female,26-35,4,Felony,1,HS Diploma,1
+Black,Male,46+,4,Misdemeanor,0,College,1
+Hispanic,Male,18-25,6,Felony,0,No HS,1
+Hispanic,Male,18-25,6,Misdemeanor,1,No HS,1
+Hispanic,Male,18-25,6,Felony,0,College,1
+White,Male,36-45,0,Felony,0,College,0
+Black,Male,18-25,4,Misdemeanor,1,HS Diploma,1
+Black,Male,36-45,0,Misdemeanor,1,No HS,1
+Hispanic,Male,26-35,4,Violent,0,College,1
+Black,Female,26-35,5,Felony,0,HS Diploma,1
+White,Female,18-25,1,Felony,1,No HS,0
+Black,Male,18-25,2,Felony,0,College,1
+White,Male,26-35,7,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,18-25,6,Misdemeanor,0,No HS,1
+Black,Female,26-35,4,Misdemeanor,0,College,1
+Black,Male,36-45,0,Violent,1,HS Diploma,0
+White,Male,46+,2,Felony,0,HS Diploma,0
+Black,Male,26-35,2,Violent,0,College,1
+Black,Male,46+,3,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,6,Felony,0,No HS,1
+Hispanic,Male,36-45,3,Misdemeanor,1,College,1
+Hispanic,Male,18-25,4,Felony,0,HS Diploma,1
+Black,Male,26-35,3,Misdemeanor,1,College,1
+Hispanic,Male,36-45,6,Felony,1,No HS,1
+White,Male,26-35,0,Misdemeanor,0,HS Diploma,0
+Black,Male,36-45,3,Felony,0,HS Diploma,0
+Black,Male,46+,1,Misdemeanor,1,College,0
+Black,Male,46+,4,Misdemeanor,1,College,1
+White,Male,26-35,2,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,7,Felony,1,No HS,1
+Black,Male,26-35,5,Misdemeanor,1,HS Diploma,1
+White,Male,18-25,2,Misdemeanor,0,No HS,1
+White,Male,26-35,1,Felony,1,HS Diploma,1
+White,Male,36-45,0,Misdemeanor,0,College,1
+Black,Female,46+,7,Felony,0,HS Diploma,1
+White,Male,36-45,6,Misdemeanor,0,HS Diploma,1
+Asian,Male,26-35,6,Violent,1,HS Diploma,1
+Hispanic,Male,18-25,2,Felony,0,HS Diploma,1
+White,Male,46+,1,Felony,1,HS Diploma,1
+Black,Male,18-25,7,Violent,1,College,1
+White,Male,18-25,3,Violent,1,HS Diploma,1
+Hispanic,Male,36-45,4,Misdemeanor,1,HS Diploma,0
+White,Male,36-45,7,Misdemeanor,1,College,0
+White,Male,46+,6,Misdemeanor,0,College,0
+Hispanic,Male,26-35,1,Misdemeanor,1,College,0
+White,Male,46+,1,Felony,0,No HS,0
+Black,Male,46+,3,Felony,1,HS Diploma,1
+Hispanic,Male,46+,6,Violent,1,HS Diploma,1
+Hispanic,Male,26-35,0,Felony,0,HS Diploma,0
+White,Male,46+,7,Felony,0,HS Diploma,1
+Hispanic,Male,36-45,5,Misdemeanor,0,HS Diploma,1
+White,Male,46+,5,Felony,0,College,0
+Black,Male,36-45,6,Felony,1,College,1
+Black,Male,46+,3,Felony,1,HS Diploma,1
+White,Female,36-45,6,Felony,0,College,1
+Black,Male,46+,6,Misdemeanor,1,College,1
+Black,Male,36-45,3,Misdemeanor,1,No HS,0
+Hispanic,Male,36-45,2,Misdemeanor,1,No HS,0
+White,Male,18-25,5,Felony,0,No HS,1
+White,Female,46+,1,Misdemeanor,1,HS Diploma,0
+Black,Male,36-45,7,Misdemeanor,1,HS Diploma,1
+Black,Female,26-35,1,Violent,1,HS Diploma,0
+Black,Male,46+,3,Misdemeanor,1,College,1
+White,Male,46+,3,Misdemeanor,1,No HS,0
+White,Male,36-45,1,Felony,1,College,0
+White,Male,46+,1,Violent,1,No HS,0
+Black,Male,26-35,6,Misdemeanor,0,College,1
+Hispanic,Male,36-45,1,Violent,1,College,0
+White,Male,46+,0,Misdemeanor,1,HS Diploma,0
+Black,Male,18-25,7,Misdemeanor,1,HS Diploma,1
+Black,Male,36-45,3,Misdemeanor,1,No HS,0
+Black,Male,36-45,7,Felony,1,College,1
+Black,Female,18-25,3,Violent,1,No HS,1
+Black,Male,46+,6,Misdemeanor,0,HS Diploma,1
+Black,Female,36-45,7,Felony,1,HS Diploma,1
+Hispanic,Male,26-35,2,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,2,Violent,1,HS Diploma,1
+White,Male,26-35,4,Misdemeanor,1,HS Diploma,0
+Asian,Male,26-35,1,Felony,1,College,0
+White,Male,26-35,1,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,18-25,6,Violent,0,HS Diploma,1
+Black,Female,46+,4,Misdemeanor,0,College,1
+Black,Female,18-25,7,Misdemeanor,1,HS Diploma,1
+Black,Male,18-25,3,Felony,0,HS Diploma,1
+White,Male,18-25,6,Violent,1,HS Diploma,1
+White,Male,46+,1,Violent,1,HS Diploma,0
+Black,Male,26-35,2,Misdemeanor,0,College,1
+Black,Male,46+,0,Misdemeanor,0,HS Diploma,1
+Asian,Male,18-25,5,Violent,1,College,1
+Black,Male,18-25,3,Misdemeanor,1,College,1
+White,Male,18-25,7,Felony,0,HS Diploma,1
+White,Male,26-35,6,Misdemeanor,1,No HS,0
+Hispanic,Female,46+,0,Felony,1,College,1
+Hispanic,Male,46+,0,Felony,0,No HS,1
+Black,Male,46+,4,Felony,1,No HS,1
+Black,Male,46+,0,Felony,0,HS Diploma,1
+Hispanic,Male,46+,1,Felony,1,HS Diploma,0
+White,Female,36-45,4,Felony,1,No HS,0
+White,Female,36-45,2,Felony,0,No HS,1
+Black,Male,26-35,0,Felony,1,HS Diploma,0
+White,Male,46+,7,Felony,1,College,1
+Black,Male,18-25,1,Felony,0,No HS,1
+White,Male,26-35,1,Violent,0,HS Diploma,1
+White,Female,26-35,6,Misdemeanor,1,No HS,1
+White,Male,36-45,7,Felony,0,HS Diploma,1
+Black,Male,46+,6,Violent,0,HS Diploma,1
+White,Male,26-35,6,Misdemeanor,0,No HS,1
+White,Male,46+,2,Felony,0,College,0
+White,Male,36-45,4,Misdemeanor,0,College,0
+White,Male,36-45,4,Misdemeanor,1,HS Diploma,1
+Black,Male,36-45,4,Misdemeanor,1,No HS,1
+White,Male,46+,2,Violent,1,HS Diploma,0
+White,Male,46+,2,Misdemeanor,1,College,0
+Hispanic,Female,36-45,2,Misdemeanor,1,HS Diploma,1
+White,Male,36-45,4,Misdemeanor,1,No HS,0
+Hispanic,Male,26-35,0,Misdemeanor,1,HS Diploma,0
+Black,Male,18-25,2,Felony,0,HS Diploma,1
+White,Male,26-35,2,Misdemeanor,0,No HS,0
+White,Female,46+,4,Violent,1,College,1
+Hispanic,Male,36-45,2,Misdemeanor,1,HS Diploma,1
+Black,Female,46+,0,Felony,1,No HS,0
+Black,Female,46+,4,Misdemeanor,1,No HS,1
+Black,Male,36-45,2,Violent,1,College,1
+Black,Male,46+,2,Misdemeanor,0,College,1
+White,Female,36-45,6,Felony,0,HS Diploma,1
+White,Female,46+,3,Felony,0,HS Diploma,1
+Black,Male,36-45,3,Misdemeanor,1,HS Diploma,1
+Hispanic,Female,46+,7,Misdemeanor,1,HS Diploma,1
+White,Male,46+,1,Felony,0,No HS,1
+Black,Female,26-35,1,Felony,0,No HS,0
+Asian,Male,26-35,7,Misdemeanor,1,No HS,1
+White,Male,26-35,2,Felony,0,College,0
+White,Male,26-35,3,Felony,1,College,1
+White,Male,26-35,1,Violent,1,HS Diploma,0
+White,Female,18-25,4,Felony,0,HS Diploma,1
+Black,Female,36-45,3,Misdemeanor,0,No HS,1
+White,Male,26-35,0,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,0,Misdemeanor,1,HS Diploma,0
+Black,Male,46+,7,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,18-25,0,Felony,0,No HS,1
+Hispanic,Male,18-25,0,Felony,0,HS Diploma,0
+Hispanic,Female,36-45,7,Felony,1,College,1
+Hispanic,Female,46+,3,Violent,0,No HS,1
+White,Male,26-35,4,Misdemeanor,1,College,1
+White,Male,18-25,0,Misdemeanor,1,College,0
+White,Male,46+,4,Misdemeanor,0,HS Diploma,1
+White,Male,46+,1,Violent,0,HS Diploma,0
+White,Female,26-35,1,Felony,0,No HS,0
+Black,Male,18-25,2,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,3,Misdemeanor,0,HS Diploma,0
+White,Male,26-35,0,Misdemeanor,0,College,1
+Black,Male,26-35,4,Violent,1,HS Diploma,1
+White,Male,26-35,4,Misdemeanor,0,HS Diploma,1
+Black,Male,26-35,5,Felony,0,College,1
+White,Female,36-45,3,Misdemeanor,1,College,1
+Asian,Male,36-45,6,Felony,1,No HS,1
+Hispanic,Male,46+,1,Violent,1,HS Diploma,0
+White,Female,46+,3,Misdemeanor,0,No HS,1
+Hispanic,Male,36-45,4,Misdemeanor,0,HS Diploma,1
+White,Female,18-25,3,Misdemeanor,1,HS Diploma,1
+Black,Male,18-25,5,Misdemeanor,1,No HS,1
+Black,Male,18-25,1,Felony,1,No HS,0
+Black,Male,36-45,1,Misdemeanor,1,HS Diploma,0
+White,Female,46+,5,Felony,1,HS Diploma,1
+White,Male,18-25,0,Felony,1,College,0
+White,Male,36-45,0,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,5,Felony,1,College,1
+Black,Male,46+,0,Felony,0,HS Diploma,0
+Hispanic,Male,26-35,1,Misdemeanor,1,HS Diploma,1
+White,Male,46+,6,Misdemeanor,1,HS Diploma,1
+Asian,Female,26-35,7,Misdemeanor,1,HS Diploma,1
+Asian,Female,26-35,6,Misdemeanor,1,HS Diploma,0
+White,Male,18-25,4,Misdemeanor,0,HS Diploma,0
+White,Male,26-35,0,Felony,1,HS Diploma,1
+Black,Female,26-35,3,Misdemeanor,1,HS Diploma,0
+White,Female,46+,4,Felony,0,HS Diploma,1
+Black,Male,46+,5,Violent,1,College,1
+White,Male,36-45,7,Misdemeanor,0,No HS,1
+Black,Female,26-35,6,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,2,Misdemeanor,1,College,1
+Black,Male,26-35,0,Misdemeanor,0,No HS,1
+Black,Male,36-45,2,Felony,1,No HS,0
+Asian,Male,46+,0,Misdemeanor,0,HS Diploma,1
+Black,Male,18-25,4,Misdemeanor,1,No HS,1
+White,Male,18-25,2,Felony,0,HS Diploma,1
+White,Male,46+,6,Felony,1,HS Diploma,0
+White,Male,36-45,1,Felony,1,College,1
+Black,Male,36-45,0,Felony,1,No HS,1
+Black,Male,46+,5,Misdemeanor,1,HS Diploma,0
+Black,Male,46+,5,Misdemeanor,0,College,1
+Hispanic,Male,46+,3,Misdemeanor,1,College,1
+White,Male,36-45,6,Felony,0,No HS,1
+Hispanic,Female,46+,6,Felony,1,No HS,1
+Black,Male,18-25,2,Felony,0,College,1
+Hispanic,Male,18-25,5,Felony,0,No HS,1
+Asian,Male,26-35,3,Felony,1,HS Diploma,1
+White,Male,36-45,2,Misdemeanor,0,No HS,0
+Black,Male,46+,6,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,7,Violent,1,No HS,1
+White,Male,36-45,4,Felony,0,HS Diploma,1
+White,Male,26-35,7,Felony,1,HS Diploma,1
+Hispanic,Male,36-45,3,Misdemeanor,1,No HS,1
+White,Male,26-35,6,Felony,1,No HS,0
+White,Male,26-35,0,Felony,1,HS Diploma,0
+Black,Male,36-45,1,Felony,0,No HS,1
+Hispanic,Male,18-25,4,Misdemeanor,1,No HS,1
+Black,Male,46+,2,Misdemeanor,1,HS Diploma,1
+White,Male,46+,0,Misdemeanor,0,No HS,0
+Black,Female,46+,2,Violent,0,HS Diploma,1
+White,Male,46+,7,Violent,0,College,1
+Asian,Male,36-45,3,Misdemeanor,0,No HS,0
+Asian,Male,18-25,3,Felony,1,No HS,1
+White,Male,26-35,1,Misdemeanor,0,HS Diploma,1
+Black,Male,26-35,3,Misdemeanor,0,No HS,1
+Hispanic,Male,46+,4,Misdemeanor,0,College,1
+White,Male,46+,7,Felony,0,No HS,1
+Black,Female,46+,2,Misdemeanor,0,No HS,1
+White,Male,46+,2,Felony,1,HS Diploma,0
+White,Male,46+,4,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,18-25,3,Violent,1,HS Diploma,0
+Black,Male,18-25,3,Violent,1,College,1
+Hispanic,Male,26-35,4,Violent,1,HS Diploma,1
+Black,Male,36-45,1,Felony,0,HS Diploma,0
+White,Male,46+,6,Felony,0,HS Diploma,1
+White,Male,26-35,6,Felony,0,HS Diploma,1
+Hispanic,Male,46+,7,Misdemeanor,1,HS Diploma,1
+White,Male,46+,0,Misdemeanor,0,HS Diploma,0
+White,Male,46+,0,Violent,0,HS Diploma,0
+White,Female,46+,3,Felony,0,HS Diploma,1
+White,Male,46+,5,Misdemeanor,0,College,1
+White,Male,18-25,0,Misdemeanor,0,HS Diploma,0
+Hispanic,Female,36-45,0,Misdemeanor,0,HS Diploma,0
+White,Male,26-35,5,Misdemeanor,0,HS Diploma,0
+Hispanic,Male,46+,0,Violent,1,College,0
+White,Male,18-25,3,Misdemeanor,0,No HS,0
+Black,Male,18-25,6,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,2,Misdemeanor,1,College,0
+Black,Female,26-35,7,Violent,1,College,1
+Black,Male,46+,3,Violent,1,HS Diploma,1
+Black,Male,36-45,3,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,26-35,5,Felony,0,No HS,1
+White,Male,26-35,7,Violent,1,College,1
+Black,Male,18-25,1,Felony,0,No HS,1
+Black,Male,36-45,1,Felony,1,HS Diploma,0
+White,Male,46+,3,Felony,0,College,1
+Black,Female,18-25,7,Misdemeanor,1,College,1
+Black,Male,26-35,4,Misdemeanor,0,HS Diploma,1
+Black,Male,26-35,4,Felony,1,No HS,1
+White,Male,36-45,6,Violent,0,HS Diploma,1
+Black,Female,46+,1,Felony,1,HS Diploma,1
+Hispanic,Male,26-35,5,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,1,Misdemeanor,0,No HS,0
+Black,Female,36-45,2,Felony,0,No HS,0
+Asian,Female,26-35,1,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,18-25,6,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,18-25,5,Misdemeanor,1,College,1
+White,Female,18-25,6,Misdemeanor,1,No HS,1
+Black,Male,36-45,6,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,0,Misdemeanor,0,College,1
+White,Male,36-45,3,Felony,1,HS Diploma,1
+Black,Male,26-35,6,Felony,1,No HS,1
+Black,Male,26-35,3,Felony,0,HS Diploma,1
+Black,Male,46+,5,Misdemeanor,0,College,0
+Hispanic,Male,46+,3,Misdemeanor,1,No HS,1
+Black,Male,36-45,5,Misdemeanor,1,College,1
+Hispanic,Male,18-25,7,Misdemeanor,0,No HS,1
+Hispanic,Male,26-35,2,Misdemeanor,0,No HS,1
+Black,Female,46+,2,Misdemeanor,1,College,0
+White,Male,36-45,0,Felony,1,College,1
+White,Male,26-35,6,Felony,0,No HS,1
+White,Male,46+,3,Misdemeanor,0,No HS,0
+White,Male,46+,7,Misdemeanor,1,College,1
+Black,Male,46+,0,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,1,Misdemeanor,1,No HS,0
+Hispanic,Female,36-45,3,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,18-25,7,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,0,Felony,0,College,1
+White,Female,18-25,2,Violent,1,No HS,0
+White,Male,26-35,5,Felony,1,No HS,1
+White,Female,18-25,7,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,7,Felony,0,HS Diploma,1
+Hispanic,Female,26-35,2,Felony,0,HS Diploma,1
+Black,Male,26-35,2,Violent,0,HS Diploma,1
+White,Male,46+,7,Misdemeanor,1,No HS,1
+White,Male,18-25,5,Felony,1,HS Diploma,0
+Black,Male,36-45,0,Misdemeanor,1,No HS,1
+Hispanic,Male,26-35,0,Felony,1,No HS,0
+Hispanic,Male,46+,0,Misdemeanor,1,College,1
+White,Male,46+,4,Misdemeanor,0,HS Diploma,0
+Asian,Female,46+,7,Violent,0,College,1
+Black,Male,36-45,3,Felony,0,HS Diploma,1
+White,Male,46+,4,Violent,0,College,1
+White,Male,26-35,4,Felony,1,No HS,0
+White,Female,26-35,5,Felony,1,No HS,1
+Black,Male,46+,7,Felony,0,No HS,1
+Hispanic,Male,46+,6,Felony,1,HS Diploma,1
+White,Male,36-45,1,Felony,1,HS Diploma,1
+Hispanic,Male,46+,7,Misdemeanor,0,College,1
+Black,Male,26-35,7,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,46+,6,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,1,Misdemeanor,1,HS Diploma,0
+White,Male,46+,6,Misdemeanor,1,HS Diploma,1
+White,Male,36-45,2,Felony,0,No HS,0
+Hispanic,Female,46+,5,Misdemeanor,1,HS Diploma,1
+White,Female,26-35,4,Felony,0,No HS,0
+White,Male,36-45,6,Misdemeanor,1,College,1
+Hispanic,Male,26-35,7,Felony,1,College,1
+Asian,Female,36-45,1,Felony,1,HS Diploma,0
+Hispanic,Male,46+,6,Felony,1,HS Diploma,1
+Black,Male,36-45,7,Misdemeanor,1,HS Diploma,1
+White,Female,46+,4,Felony,1,HS Diploma,1
+White,Male,26-35,7,Felony,1,HS Diploma,1
+Black,Female,46+,6,Violent,1,No HS,1
+White,Female,36-45,3,Felony,1,HS Diploma,0
+White,Male,46+,4,Felony,0,College,1
+Black,Female,46+,7,Violent,1,HS Diploma,1
+White,Male,46+,7,Misdemeanor,1,No HS,1
+Black,Male,26-35,7,Felony,0,No HS,1
+Black,Male,46+,2,Misdemeanor,1,HS Diploma,0
+White,Female,46+,0,Violent,0,College,1
+Black,Male,26-35,2,Felony,0,College,1
+Hispanic,Female,36-45,4,Felony,1,College,0
+White,Male,18-25,6,Misdemeanor,1,College,1
+Hispanic,Male,26-35,5,Felony,1,HS Diploma,1
+White,Male,46+,6,Misdemeanor,1,No HS,1
+Black,Male,26-35,4,Felony,1,HS Diploma,1
+Black,Male,26-35,7,Misdemeanor,0,HS Diploma,1
+White,Female,36-45,0,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,2,Misdemeanor,1,No HS,1
+Black,Male,26-35,2,Misdemeanor,0,HS Diploma,0
+Black,Male,36-45,6,Misdemeanor,0,No HS,1
+Hispanic,Male,46+,4,Misdemeanor,0,HS Diploma,1
+Hispanic,Female,26-35,3,Misdemeanor,1,No HS,1
+Asian,Male,36-45,5,Violent,0,College,0
+Black,Female,46+,5,Misdemeanor,0,College,1
+White,Male,18-25,7,Felony,1,College,1
+White,Male,36-45,1,Misdemeanor,1,College,1
+White,Female,46+,7,Violent,0,HS Diploma,1
+White,Female,36-45,4,Felony,0,No HS,1
+Black,Male,18-25,4,Felony,0,HS Diploma,1
+Black,Male,36-45,7,Misdemeanor,0,HS Diploma,1
+White,Female,26-35,5,Violent,0,No HS,1
+Hispanic,Male,26-35,1,Misdemeanor,0,HS Diploma,1
+Black,Male,36-45,0,Felony,1,HS Diploma,1
+White,Male,18-25,4,Felony,1,HS Diploma,1
+White,Male,26-35,7,Violent,1,No HS,1
+White,Male,46+,3,Misdemeanor,1,HS Diploma,0
+White,Male,46+,0,Misdemeanor,1,College,1
+Hispanic,Female,18-25,0,Felony,1,College,0
+Hispanic,Female,26-35,0,Violent,0,HS Diploma,1
+White,Male,26-35,4,Misdemeanor,0,College,0
+White,Male,36-45,5,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,0,Misdemeanor,1,No HS,0
+Hispanic,Male,26-35,2,Misdemeanor,1,College,1
+White,Female,18-25,4,Misdemeanor,1,College,0
+Black,Male,46+,4,Violent,1,College,1
+Hispanic,Male,26-35,1,Misdemeanor,0,No HS,0
+Hispanic,Male,26-35,5,Felony,1,No HS,1
+Hispanic,Male,46+,0,Misdemeanor,1,No HS,0
+White,Male,36-45,4,Felony,1,College,1
+Black,Male,36-45,6,Felony,1,HS Diploma,1
+White,Male,26-35,5,Felony,1,No HS,1
+Black,Female,46+,3,Felony,0,No HS,1
+White,Male,18-25,3,Violent,1,HS Diploma,1
+Black,Male,36-45,5,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,7,Violent,0,College,1
+Black,Male,46+,4,Misdemeanor,1,HS Diploma,0
+Black,Male,46+,4,Felony,0,College,1
+Hispanic,Male,18-25,3,Misdemeanor,1,HS Diploma,0
+Black,Female,46+,6,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,3,Felony,0,No HS,1
+Hispanic,Male,46+,2,Violent,0,HS Diploma,1
+White,Male,46+,3,Misdemeanor,1,No HS,0
+Black,Female,36-45,6,Felony,0,HS Diploma,1
+Black,Male,36-45,6,Violent,1,HS Diploma,1
+White,Male,18-25,2,Misdemeanor,1,No HS,1
+Asian,Male,26-35,4,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,7,Felony,0,College,1
+White,Male,46+,0,Misdemeanor,0,No HS,0
+White,Female,46+,5,Felony,0,No HS,1
+White,Female,46+,5,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,5,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,0,Felony,1,HS Diploma,0
+Black,Male,26-35,1,Violent,1,HS Diploma,1
+Hispanic,Female,36-45,5,Misdemeanor,1,No HS,0
+White,Male,46+,2,Felony,1,No HS,0
+Black,Female,18-25,3,Felony,0,No HS,1
+White,Male,46+,2,Violent,1,College,0
+Hispanic,Male,46+,7,Misdemeanor,0,No HS,1
+Hispanic,Male,46+,1,Violent,1,HS Diploma,0
+Black,Male,46+,6,Misdemeanor,1,College,1
+Hispanic,Male,36-45,1,Violent,0,College,0
+Black,Male,26-35,2,Violent,1,No HS,1
+White,Male,36-45,3,Violent,0,HS Diploma,1
+White,Female,36-45,4,Violent,1,HS Diploma,1
+Hispanic,Male,18-25,4,Violent,1,No HS,1
+Black,Male,26-35,4,Violent,0,HS Diploma,1
+Hispanic,Female,26-35,5,Violent,0,College,1
+Asian,Female,46+,1,Felony,1,HS Diploma,1
+White,Male,46+,5,Violent,0,HS Diploma,1
+Black,Male,46+,2,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,1,Felony,0,HS Diploma,1
+Hispanic,Male,46+,3,Felony,0,College,1
+Black,Female,26-35,5,Violent,0,No HS,1
+Black,Female,46+,0,Felony,1,College,0
+Black,Female,18-25,1,Misdemeanor,0,College,0
+White,Male,46+,3,Felony,0,No HS,0
+Asian,Male,26-35,6,Misdemeanor,0,No HS,1
+White,Male,18-25,3,Felony,1,HS Diploma,1
+White,Male,46+,3,Violent,1,HS Diploma,1
+White,Male,46+,0,Violent,0,College,0
+White,Male,18-25,4,Violent,0,HS Diploma,1
+Black,Male,46+,7,Felony,0,HS Diploma,1
+White,Male,18-25,2,Misdemeanor,1,HS Diploma,0
+Black,Male,46+,1,Felony,0,HS Diploma,1
+White,Female,18-25,0,Felony,1,HS Diploma,0
+White,Male,18-25,3,Misdemeanor,1,HS Diploma,0
+Black,Female,26-35,0,Misdemeanor,1,No HS,0
+Hispanic,Female,46+,1,Violent,1,College,0
+Black,Male,26-35,2,Felony,0,No HS,1
+White,Female,18-25,1,Felony,1,No HS,0
+Black,Male,46+,6,Felony,1,HS Diploma,1
+Hispanic,Female,36-45,5,Felony,0,HS Diploma,1
+Black,Female,18-25,0,Misdemeanor,0,HS Diploma,1
+Black,Female,46+,5,Violent,1,HS Diploma,1
+Hispanic,Male,46+,3,Misdemeanor,1,HS Diploma,0
+White,Female,36-45,5,Felony,1,HS Diploma,0
+Black,Female,46+,7,Felony,1,No HS,1
+White,Female,18-25,3,Felony,1,College,1
+Hispanic,Male,26-35,4,Misdemeanor,0,HS Diploma,1
+White,Male,46+,7,Violent,1,HS Diploma,1
+Asian,Male,26-35,4,Violent,0,HS Diploma,0
+Hispanic,Male,46+,2,Violent,0,College,1
+White,Male,26-35,2,Felony,1,HS Diploma,0
+Hispanic,Female,26-35,5,Felony,1,HS Diploma,1
+Hispanic,Male,26-35,5,Felony,1,HS Diploma,1
+White,Male,46+,4,Felony,0,No HS,1
+Hispanic,Male,46+,4,Felony,1,College,1
+White,Male,46+,1,Felony,0,HS Diploma,1
+White,Male,26-35,1,Misdemeanor,1,No HS,0
+White,Male,26-35,5,Misdemeanor,0,College,0
+Hispanic,Male,18-25,3,Felony,1,HS Diploma,1
+Asian,Male,36-45,6,Violent,0,College,1
+Hispanic,Male,46+,5,Violent,0,HS Diploma,1
+Black,Male,36-45,3,Violent,1,HS Diploma,1
+Asian,Male,46+,4,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,1,Felony,1,HS Diploma,1
+White,Male,36-45,4,Misdemeanor,0,No HS,1
+White,Male,26-35,4,Misdemeanor,1,College,0
+Asian,Male,36-45,2,Misdemeanor,0,No HS,0
+Black,Male,36-45,4,Misdemeanor,1,HS Diploma,0
+White,Male,36-45,3,Misdemeanor,0,No HS,1
+Black,Male,26-35,2,Felony,0,College,1
+Black,Male,46+,1,Misdemeanor,1,HS Diploma,0
+White,Male,26-35,3,Misdemeanor,0,College,1
+White,Male,18-25,0,Misdemeanor,1,HS Diploma,1
+White,Male,18-25,1,Misdemeanor,0,College,0
+White,Male,18-25,5,Felony,1,HS Diploma,1
+Black,Female,46+,0,Misdemeanor,0,HS Diploma,0
+White,Male,26-35,3,Misdemeanor,1,HS Diploma,0
+Black,Male,26-35,7,Felony,0,No HS,1
+Black,Female,36-45,1,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,0,Felony,0,College,0
+White,Male,46+,0,Misdemeanor,1,HS Diploma,0
+White,Male,46+,1,Misdemeanor,0,College,0
+Black,Female,36-45,4,Misdemeanor,0,No HS,1
+White,Female,26-35,6,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,3,Misdemeanor,0,No HS,1
+Black,Male,46+,3,Felony,0,HS Diploma,0
+White,Female,26-35,7,Felony,0,College,1
+Hispanic,Female,36-45,2,Felony,0,HS Diploma,1
+White,Female,26-35,1,Misdemeanor,1,No HS,1
+Black,Male,26-35,3,Felony,0,No HS,1
+Hispanic,Male,26-35,0,Violent,0,HS Diploma,1
+Black,Female,36-45,1,Misdemeanor,1,College,1
+Black,Male,46+,5,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,18-25,7,Violent,0,HS Diploma,1
+Black,Male,46+,0,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,1,Violent,1,No HS,1
+Hispanic,Female,26-35,7,Misdemeanor,1,HS Diploma,1
+White,Male,46+,0,Misdemeanor,0,HS Diploma,0
+White,Male,26-35,0,Misdemeanor,1,HS Diploma,0
+Black,Male,26-35,1,Felony,1,HS Diploma,1
+Hispanic,Male,26-35,2,Misdemeanor,0,No HS,0
+White,Male,18-25,6,Felony,0,HS Diploma,1
+Black,Male,18-25,7,Violent,1,HS Diploma,1
+White,Female,36-45,7,Felony,0,College,1
+White,Male,18-25,6,Felony,0,HS Diploma,1
+White,Male,46+,0,Felony,0,No HS,0
+Hispanic,Male,26-35,1,Misdemeanor,0,College,0
+White,Male,18-25,4,Felony,0,College,1
+White,Female,46+,5,Violent,1,No HS,1
+Black,Male,26-35,4,Felony,1,No HS,1
+White,Male,46+,5,Misdemeanor,1,No HS,0
+White,Female,36-45,6,Misdemeanor,0,College,1
+White,Male,46+,6,Misdemeanor,1,HS Diploma,1
+Asian,Male,18-25,6,Felony,1,HS Diploma,0
+Black,Male,46+,2,Misdemeanor,0,HS Diploma,0
+White,Male,26-35,1,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,5,Felony,1,College,1
+White,Female,36-45,2,Felony,1,HS Diploma,0
+White,Male,46+,5,Felony,0,HS Diploma,1
+Hispanic,Female,46+,0,Felony,0,No HS,1
+Hispanic,Male,46+,7,Misdemeanor,0,HS Diploma,1
+White,Female,26-35,5,Misdemeanor,0,HS Diploma,1
+Hispanic,Female,36-45,5,Violent,1,HS Diploma,0
+Hispanic,Male,46+,4,Violent,0,HS Diploma,1
+Black,Male,18-25,2,Violent,1,HS Diploma,1
+White,Male,18-25,0,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,6,Misdemeanor,0,HS Diploma,1
+White,Male,18-25,4,Felony,1,HS Diploma,1
+White,Male,46+,2,Violent,1,HS Diploma,0
+Hispanic,Male,26-35,0,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,7,Violent,0,HS Diploma,1
+White,Male,36-45,7,Misdemeanor,0,No HS,1
+White,Male,36-45,5,Misdemeanor,1,No HS,1
+Black,Male,18-25,3,Misdemeanor,0,HS Diploma,1
+Black,Male,36-45,4,Misdemeanor,1,College,1
+Hispanic,Male,46+,7,Violent,0,College,1
+Hispanic,Male,18-25,0,Misdemeanor,1,College,1
+Hispanic,Female,46+,6,Misdemeanor,0,College,1
+Black,Male,46+,7,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,46+,3,Misdemeanor,0,HS Diploma,1
+Black,Female,36-45,2,Misdemeanor,1,No HS,1
+White,Female,46+,3,Misdemeanor,0,HS Diploma,1
+White,Male,18-25,5,Misdemeanor,1,HS Diploma,1
+White,Male,18-25,4,Misdemeanor,0,No HS,0
+White,Female,46+,1,Violent,0,No HS,1
+Black,Male,46+,2,Misdemeanor,1,HS Diploma,1
+Black,Male,18-25,3,Felony,1,HS Diploma,1
+White,Male,18-25,0,Felony,1,No HS,0
+White,Male,18-25,1,Violent,1,College,0
+Black,Male,26-35,1,Misdemeanor,0,HS Diploma,0
+White,Male,18-25,2,Felony,0,No HS,1
+Black,Male,36-45,3,Misdemeanor,0,HS Diploma,1
+White,Female,36-45,4,Felony,0,HS Diploma,1
+Hispanic,Male,26-35,3,Misdemeanor,0,No HS,1
+White,Female,18-25,3,Misdemeanor,1,HS Diploma,1
+White,Male,36-45,2,Felony,0,HS Diploma,1
+Black,Male,26-35,2,Misdemeanor,1,College,1
+Black,Male,46+,0,Violent,0,College,1
+White,Male,46+,4,Misdemeanor,0,College,1
+Hispanic,Male,26-35,6,Felony,1,No HS,1
+Black,Male,18-25,2,Felony,1,HS Diploma,1
+White,Male,36-45,0,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,36-45,5,Violent,0,HS Diploma,1
+White,Female,46+,1,Misdemeanor,0,College,0
+Asian,Male,46+,7,Violent,0,No HS,1
+Black,Male,26-35,0,Misdemeanor,0,College,0
+Black,Female,46+,4,Felony,0,College,1
+Black,Male,46+,7,Misdemeanor,1,College,1
+White,Female,36-45,0,Misdemeanor,0,College,1
+Hispanic,Female,26-35,5,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,0,Misdemeanor,0,No HS,1
+Black,Female,36-45,2,Misdemeanor,1,HS Diploma,1
+White,Female,26-35,4,Felony,0,HS Diploma,1
+White,Male,26-35,0,Violent,0,HS Diploma,0
+Black,Female,46+,7,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,46+,6,Felony,1,No HS,1
+Black,Female,18-25,3,Misdemeanor,0,HS Diploma,1
+White,Male,46+,0,Felony,1,College,0
+Black,Male,18-25,6,Misdemeanor,1,HS Diploma,1
+Black,Male,36-45,1,Violent,1,College,1
+Black,Male,18-25,1,Felony,0,HS Diploma,1
+White,Male,26-35,0,Felony,0,No HS,0
+Black,Female,36-45,5,Felony,1,No HS,1
+White,Male,46+,0,Violent,0,College,1
+White,Female,36-45,3,Violent,0,No HS,0
+Hispanic,Male,46+,0,Felony,1,College,1
+Black,Female,26-35,2,Felony,0,College,1
+Black,Male,36-45,6,Felony,0,HS Diploma,1
+White,Male,46+,4,Felony,1,HS Diploma,1
+Black,Male,46+,5,Felony,1,HS Diploma,1
+White,Male,26-35,3,Felony,1,HS Diploma,1
+Black,Female,18-25,0,Violent,1,No HS,0
+White,Male,46+,5,Misdemeanor,0,No HS,0
+White,Male,18-25,2,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,26-35,7,Misdemeanor,1,College,0
+White,Female,36-45,5,Violent,1,No HS,1
+Hispanic,Male,18-25,0,Misdemeanor,0,HS Diploma,0
+White,Male,46+,3,Felony,1,College,1
+Black,Male,36-45,3,Felony,1,No HS,1
+White,Male,46+,1,Violent,1,HS Diploma,1
+Black,Male,26-35,1,Felony,0,College,1
+White,Female,26-35,0,Felony,1,HS Diploma,0
+Hispanic,Male,18-25,6,Misdemeanor,1,HS Diploma,1
+White,Female,36-45,7,Felony,0,HS Diploma,1
+White,Male,36-45,4,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,2,Violent,0,HS Diploma,1
+Black,Male,18-25,1,Felony,0,No HS,1
+Hispanic,Male,46+,6,Misdemeanor,0,HS Diploma,0
+Black,Male,26-35,1,Misdemeanor,1,HS Diploma,0
+White,Male,36-45,6,Misdemeanor,0,College,1
+Black,Male,18-25,4,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,26-35,5,Felony,1,HS Diploma,1
+Black,Female,18-25,3,Violent,0,No HS,1
+Black,Male,46+,0,Felony,0,College,0
+Black,Male,46+,0,Misdemeanor,0,No HS,0
+Hispanic,Female,46+,2,Felony,0,No HS,1
+Hispanic,Male,18-25,4,Violent,1,No HS,1
+Hispanic,Male,36-45,6,Violent,1,College,1
+White,Female,46+,6,Misdemeanor,1,HS Diploma,1
+White,Male,46+,5,Felony,0,College,0
+White,Male,26-35,4,Felony,1,No HS,1
+Hispanic,Male,46+,4,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,46+,3,Felony,1,HS Diploma,1
+Black,Male,36-45,4,Misdemeanor,0,HS Diploma,1
+White,Female,26-35,3,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,0,Misdemeanor,1,HS Diploma,0
+Black,Male,26-35,6,Felony,1,College,1
+White,Male,46+,7,Violent,1,HS Diploma,1
+Black,Male,46+,6,Misdemeanor,1,College,1
+Black,Male,18-25,3,Felony,0,College,1
+White,Male,36-45,0,Misdemeanor,1,College,0
+Hispanic,Male,18-25,7,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,6,Violent,0,HS Diploma,1
+Hispanic,Female,36-45,2,Felony,0,No HS,1
+Black,Male,46+,4,Felony,0,College,1
+White,Female,18-25,2,Felony,1,No HS,1
+Hispanic,Male,36-45,4,Misdemeanor,1,No HS,1
+Hispanic,Male,46+,5,Felony,1,HS Diploma,1
+Hispanic,Male,18-25,2,Felony,0,HS Diploma,0
+Black,Male,18-25,1,Violent,1,HS Diploma,1
+Black,Female,46+,1,Felony,1,HS Diploma,0
+Hispanic,Male,26-35,3,Felony,0,HS Diploma,0
+White,Male,46+,5,Violent,0,College,1
+White,Male,46+,7,Violent,1,College,0
+White,Male,36-45,2,Misdemeanor,0,College,0
+Hispanic,Male,46+,4,Misdemeanor,0,HS Diploma,1
+Black,Male,18-25,0,Violent,1,No HS,1
+White,Male,46+,3,Misdemeanor,0,HS Diploma,1
+White,Female,46+,7,Misdemeanor,1,No HS,1
+Black,Male,18-25,5,Misdemeanor,1,College,1
+Hispanic,Female,46+,3,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,18-25,5,Felony,0,College,1
+Hispanic,Male,18-25,1,Violent,1,HS Diploma,1
+Hispanic,Male,46+,7,Misdemeanor,0,HS Diploma,1
+White,Female,46+,5,Felony,1,HS Diploma,1
+Black,Male,46+,2,Misdemeanor,1,HS Diploma,0
+Black,Male,46+,2,Felony,0,College,1
+Black,Male,46+,7,Felony,1,HS Diploma,1
+Black,Male,36-45,5,Felony,1,No HS,1
+Black,Male,46+,3,Misdemeanor,0,HS Diploma,0
+White,Female,26-35,6,Misdemeanor,1,No HS,1
+Hispanic,Male,46+,1,Violent,0,HS Diploma,1
+White,Male,46+,7,Misdemeanor,0,No HS,1
+Black,Male,46+,0,Misdemeanor,1,HS Diploma,0
+White,Male,46+,1,Misdemeanor,1,HS Diploma,1
+White,Male,18-25,2,Violent,0,College,1
+Hispanic,Female,36-45,0,Felony,1,No HS,0
+White,Male,26-35,6,Felony,1,HS Diploma,1
+White,Male,18-25,6,Felony,0,No HS,1
+White,Male,26-35,3,Violent,1,No HS,1
+Black,Male,26-35,6,Misdemeanor,0,HS Diploma,1
+Black,Male,26-35,0,Misdemeanor,1,HS Diploma,0
+White,Male,26-35,3,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,7,Misdemeanor,0,No HS,1
+Hispanic,Male,26-35,1,Misdemeanor,1,HS Diploma,0
+White,Male,46+,0,Felony,1,HS Diploma,1
+Black,Male,18-25,4,Violent,1,HS Diploma,1
+Black,Female,18-25,2,Felony,1,College,1
+White,Male,26-35,3,Misdemeanor,1,HS Diploma,0
+Black,Male,26-35,0,Felony,1,HS Diploma,1
+White,Female,18-25,0,Felony,1,HS Diploma,1
+Hispanic,Male,36-45,6,Violent,1,HS Diploma,1
+White,Male,46+,5,Violent,1,College,1
+Black,Male,18-25,4,Felony,0,College,1
+White,Male,26-35,6,Felony,0,HS Diploma,1
+Hispanic,Female,36-45,5,Felony,1,No HS,0
+Black,Male,46+,5,Violent,0,College,1
+Hispanic,Male,18-25,5,Misdemeanor,0,No HS,1
+Hispanic,Male,18-25,1,Misdemeanor,1,HS Diploma,0
+White,Male,46+,4,Misdemeanor,1,No HS,1
+Hispanic,Female,36-45,0,Felony,1,HS Diploma,1
+Black,Male,26-35,2,Misdemeanor,1,HS Diploma,0
+White,Male,26-35,0,Misdemeanor,1,HS Diploma,1
+White,Male,46+,0,Misdemeanor,0,College,1
+Hispanic,Male,18-25,0,Felony,0,HS Diploma,1
+Black,Male,46+,5,Felony,1,College,1
+Black,Female,46+,4,Felony,1,HS Diploma,1
+Hispanic,Female,46+,7,Felony,1,College,1
+Hispanic,Male,18-25,6,Violent,0,HS Diploma,1
+White,Female,36-45,4,Misdemeanor,1,No HS,1
+White,Female,36-45,3,Misdemeanor,1,No HS,1
+Hispanic,Male,18-25,3,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,18-25,5,Misdemeanor,1,College,1
+Black,Male,26-35,6,Misdemeanor,0,No HS,1
+White,Male,26-35,5,Misdemeanor,0,College,1
+Black,Female,46+,3,Felony,1,HS Diploma,1
+Black,Male,46+,0,Misdemeanor,0,No HS,0
+White,Male,26-35,3,Misdemeanor,0,No HS,0
+Hispanic,Male,26-35,6,Felony,0,No HS,1
+White,Male,46+,3,Felony,1,HS Diploma,1
+Black,Male,18-25,7,Misdemeanor,0,HS Diploma,1
+White,Male,46+,1,Violent,1,HS Diploma,1
+White,Male,46+,7,Misdemeanor,1,No HS,1
+Black,Male,18-25,5,Misdemeanor,1,HS Diploma,0
+White,Female,18-25,5,Misdemeanor,1,HS Diploma,0
+White,Female,36-45,4,Misdemeanor,0,No HS,1
+White,Male,46+,3,Misdemeanor,1,College,1
+Black,Male,18-25,4,Felony,0,No HS,1
+White,Male,46+,2,Violent,1,HS Diploma,1
+White,Male,26-35,5,Misdemeanor,1,No HS,1
+Hispanic,Male,26-35,1,Misdemeanor,1,No HS,0
+White,Male,46+,2,Violent,1,HS Diploma,1
+White,Male,26-35,5,Misdemeanor,0,HS Diploma,0
+White,Male,36-45,4,Felony,0,No HS,1
+Hispanic,Male,46+,4,Misdemeanor,0,HS Diploma,1
+Black,Male,36-45,2,Misdemeanor,1,HS Diploma,1
+White,Female,46+,3,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,46+,1,Felony,0,College,1
+Hispanic,Male,46+,7,Felony,0,HS Diploma,1
+Hispanic,Male,46+,4,Violent,1,College,1
+Black,Female,26-35,0,Misdemeanor,0,HS Diploma,0
+White,Male,26-35,1,Felony,0,College,0
+Black,Female,46+,2,Misdemeanor,1,HS Diploma,0
+White,Male,36-45,4,Misdemeanor,0,No HS,1
+Black,Male,46+,7,Misdemeanor,0,No HS,1
+Black,Male,26-35,4,Violent,0,HS Diploma,1
+Black,Male,36-45,5,Felony,1,College,1
+White,Male,36-45,2,Felony,0,No HS,1
+Black,Male,26-35,0,Violent,1,HS Diploma,1
+Black,Male,26-35,5,Felony,1,HS Diploma,1
+Asian,Male,46+,0,Violent,1,HS Diploma,1
+White,Male,18-25,4,Felony,1,No HS,0
+Hispanic,Male,18-25,3,Misdemeanor,0,No HS,1
+White,Male,26-35,0,Felony,1,No HS,0
+White,Male,26-35,0,Violent,1,No HS,0
+White,Male,46+,6,Misdemeanor,0,No HS,1
+Black,Male,46+,3,Felony,1,No HS,1
+Black,Male,46+,6,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,5,Felony,1,HS Diploma,1
+Hispanic,Male,18-25,0,Misdemeanor,0,College,0
+White,Male,46+,3,Misdemeanor,0,College,1
+Black,Female,18-25,6,Felony,1,HS Diploma,1
+Black,Male,46+,2,Misdemeanor,0,No HS,1
+Black,Male,18-25,5,Misdemeanor,0,College,1
+Black,Male,36-45,1,Felony,1,HS Diploma,1
+White,Female,46+,1,Violent,0,College,0
+Hispanic,Female,18-25,2,Misdemeanor,0,HS Diploma,1
+Asian,Female,46+,0,Misdemeanor,0,College,1
+Black,Female,26-35,1,Misdemeanor,1,HS Diploma,0
+Black,Male,26-35,2,Misdemeanor,0,HS Diploma,1
+Black,Male,26-35,1,Felony,1,HS Diploma,1
+White,Male,36-45,0,Violent,0,No HS,0
+White,Male,46+,5,Felony,0,College,0
+Asian,Male,36-45,3,Misdemeanor,1,No HS,1
+Black,Male,36-45,6,Felony,1,HS Diploma,1
+Black,Female,26-35,2,Misdemeanor,1,College,1
+Asian,Female,18-25,5,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,46+,1,Felony,0,No HS,1
+Black,Male,46+,0,Misdemeanor,0,No HS,1
+White,Female,18-25,5,Misdemeanor,1,No HS,1
+White,Male,46+,1,Misdemeanor,1,HS Diploma,0
+Hispanic,Female,36-45,0,Violent,1,No HS,1
+Hispanic,Male,36-45,7,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,0,Misdemeanor,1,HS Diploma,0
+White,Male,18-25,0,Misdemeanor,1,No HS,0
+Black,Female,46+,0,Misdemeanor,0,HS Diploma,1
+White,Male,46+,2,Felony,0,HS Diploma,1
+White,Male,36-45,5,Violent,1,HS Diploma,0
+Hispanic,Male,26-35,3,Misdemeanor,1,HS Diploma,1
+White,Male,46+,2,Felony,1,College,0
+Black,Male,46+,1,Misdemeanor,0,College,1
+Black,Male,36-45,2,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,26-35,2,Misdemeanor,1,HS Diploma,0
+Black,Female,18-25,1,Misdemeanor,1,HS Diploma,0
+White,Male,36-45,3,Violent,1,HS Diploma,1
+Black,Female,46+,2,Misdemeanor,1,No HS,1
+White,Male,46+,0,Felony,1,HS Diploma,1
+Black,Male,18-25,2,Violent,0,HS Diploma,1
+Black,Male,26-35,6,Misdemeanor,0,HS Diploma,1
+White,Female,46+,1,Misdemeanor,0,HS Diploma,0
+White,Male,26-35,6,Misdemeanor,0,College,1
+White,Male,36-45,3,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,6,Felony,0,College,1
+Black,Female,46+,2,Violent,1,College,1
+Black,Male,18-25,2,Felony,0,College,1
+White,Female,18-25,6,Misdemeanor,0,College,1
+Hispanic,Female,36-45,1,Misdemeanor,0,College,1
+Black,Male,46+,4,Felony,0,No HS,1
+Hispanic,Male,36-45,4,Violent,0,No HS,1
+Hispanic,Male,36-45,5,Felony,0,No HS,1
+Hispanic,Male,36-45,6,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,46+,2,Misdemeanor,0,HS Diploma,1
+Black,Male,36-45,5,Violent,1,College,1
+Black,Female,36-45,0,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,26-35,7,Misdemeanor,1,HS Diploma,1
+White,Male,36-45,2,Felony,0,College,1
+White,Male,36-45,5,Misdemeanor,0,No HS,1
+White,Female,46+,6,Misdemeanor,1,No HS,1
+White,Male,18-25,4,Misdemeanor,1,College,1
+Hispanic,Male,46+,2,Violent,1,No HS,1
+Hispanic,Male,46+,0,Misdemeanor,0,No HS,0
+Black,Male,26-35,7,Violent,0,HS Diploma,1
+Hispanic,Male,18-25,3,Misdemeanor,1,No HS,1
+White,Male,18-25,2,Violent,1,College,0
+Hispanic,Female,26-35,1,Violent,1,HS Diploma,0
+White,Female,46+,0,Felony,0,No HS,0
+Hispanic,Female,36-45,2,Felony,0,HS Diploma,1
+Hispanic,Male,26-35,4,Misdemeanor,1,No HS,1
+Asian,Male,26-35,5,Misdemeanor,1,No HS,1
+Hispanic,Male,18-25,2,Felony,1,HS Diploma,0
+White,Male,26-35,5,Violent,0,HS Diploma,1
+White,Female,18-25,4,Felony,0,HS Diploma,1
+Hispanic,Male,46+,6,Misdemeanor,0,College,1
+Black,Female,36-45,1,Misdemeanor,1,College,1
+Hispanic,Male,46+,3,Violent,1,College,0
+White,Male,26-35,4,Misdemeanor,0,HS Diploma,1
+White,Female,46+,2,Misdemeanor,1,No HS,0
+White,Female,46+,7,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,1,Misdemeanor,0,No HS,0
+White,Male,18-25,7,Misdemeanor,1,No HS,0
+Black,Male,46+,0,Violent,0,College,1
+White,Male,26-35,2,Violent,1,College,0
+Black,Male,36-45,7,Felony,1,No HS,1
+Hispanic,Male,26-35,5,Felony,0,HS Diploma,1
+White,Male,36-45,7,Felony,1,HS Diploma,0
+White,Male,46+,6,Misdemeanor,0,College,1
+Black,Male,46+,7,Felony,0,HS Diploma,1
+Hispanic,Male,46+,6,Violent,1,College,1
+White,Male,46+,5,Misdemeanor,0,College,0
+Black,Male,26-35,6,Violent,1,HS Diploma,1
+Asian,Male,26-35,5,Violent,1,HS Diploma,1
+Black,Male,18-25,7,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,18-25,6,Violent,0,HS Diploma,1
+Hispanic,Male,36-45,0,Felony,1,HS Diploma,1
+Hispanic,Male,46+,5,Felony,1,HS Diploma,1
+Hispanic,Male,26-35,7,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,7,Felony,1,HS Diploma,1
+White,Female,26-35,5,Violent,0,HS Diploma,1
+White,Female,36-45,4,Misdemeanor,0,No HS,0
+White,Female,26-35,5,Felony,0,HS Diploma,1
+White,Male,18-25,6,Felony,0,HS Diploma,1
+White,Female,18-25,7,Misdemeanor,0,No HS,1
+White,Male,46+,1,Violent,0,College,1
+White,Male,36-45,6,Violent,0,No HS,1
+White,Male,36-45,7,Felony,0,HS Diploma,1
+White,Male,46+,3,Misdemeanor,1,HS Diploma,0
+White,Male,36-45,2,Violent,1,HS Diploma,1
+Hispanic,Male,26-35,1,Violent,1,No HS,0
+Hispanic,Male,46+,1,Misdemeanor,1,No HS,0
+Hispanic,Male,18-25,3,Felony,1,No HS,0
+Black,Female,46+,5,Misdemeanor,1,No HS,1
+White,Female,18-25,4,Misdemeanor,1,HS Diploma,1
+Black,Male,36-45,5,Misdemeanor,1,HS Diploma,1
+Hispanic,Female,36-45,5,Misdemeanor,0,No HS,1
+Black,Female,46+,3,Violent,1,College,1
+Hispanic,Male,46+,3,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,6,Felony,1,HS Diploma,1
+Black,Male,18-25,3,Violent,1,HS Diploma,1
+Black,Male,36-45,5,Felony,1,HS Diploma,1
+Hispanic,Male,18-25,0,Violent,1,HS Diploma,0
+White,Male,46+,6,Violent,0,College,1
+White,Male,26-35,7,Felony,1,HS Diploma,1
+Black,Female,26-35,6,Felony,1,HS Diploma,1
+Hispanic,Male,18-25,5,Misdemeanor,1,College,0
+White,Male,46+,2,Felony,1,HS Diploma,1
+Black,Male,18-25,3,Felony,0,HS Diploma,1
+White,Male,26-35,2,Felony,0,No HS,0
+White,Male,26-35,5,Misdemeanor,0,HS Diploma,1
+White,Female,46+,7,Violent,1,College,1
+Black,Male,46+,5,Violent,1,No HS,1
+Hispanic,Male,18-25,7,Misdemeanor,1,No HS,1
+Black,Female,36-45,3,Felony,1,College,1
+Black,Male,36-45,4,Violent,0,HS Diploma,1
+White,Male,46+,4,Felony,1,No HS,0
+White,Female,46+,3,Violent,1,College,1
+Hispanic,Female,46+,1,Misdemeanor,0,HS Diploma,0
+White,Male,36-45,2,Misdemeanor,1,HS Diploma,1
+White,Female,26-35,7,Misdemeanor,0,HS Diploma,1
+Black,Male,36-45,4,Misdemeanor,1,HS Diploma,1
+Asian,Male,26-35,0,Violent,0,College,1
+White,Male,36-45,1,Misdemeanor,0,College,0
+Black,Male,26-35,7,Misdemeanor,1,HS Diploma,1
+White,Female,18-25,6,Felony,1,HS Diploma,0
+White,Female,36-45,4,Felony,1,College,0
+Hispanic,Male,18-25,1,Misdemeanor,0,HS Diploma,0
+Black,Male,46+,7,Violent,0,College,1
+White,Female,36-45,5,Violent,1,HS Diploma,1
+Hispanic,Male,36-45,7,Violent,1,HS Diploma,1
+Black,Male,36-45,2,Felony,1,College,1
+Black,Female,26-35,5,Felony,1,HS Diploma,1
+Black,Female,46+,5,Misdemeanor,0,College,1
+White,Male,18-25,1,Misdemeanor,1,HS Diploma,0
+Black,Male,26-35,7,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,0,Felony,0,College,0
+White,Female,26-35,7,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,6,Violent,0,HS Diploma,1
+White,Male,18-25,7,Felony,1,HS Diploma,0
+White,Female,46+,1,Misdemeanor,1,HS Diploma,0
+Black,Male,36-45,5,Misdemeanor,0,College,1
+Black,Male,46+,6,Felony,0,No HS,1
+Black,Male,36-45,4,Violent,1,No HS,1
+Hispanic,Male,46+,6,Violent,1,College,1
+Asian,Male,18-25,0,Felony,0,College,0
+Hispanic,Male,36-45,5,Misdemeanor,1,College,1
+Hispanic,Female,36-45,2,Violent,1,HS Diploma,0
+Black,Male,46+,4,Felony,1,HS Diploma,1
+White,Male,18-25,2,Violent,0,College,1
+Black,Male,36-45,5,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,7,Felony,1,College,1
+White,Male,36-45,3,Violent,1,No HS,1
+White,Male,46+,4,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,1,Felony,1,HS Diploma,0
+Hispanic,Male,26-35,2,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,1,Misdemeanor,0,No HS,0
+White,Female,46+,6,Felony,1,HS Diploma,1
+Black,Male,18-25,6,Violent,1,No HS,1
+White,Male,46+,7,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,46+,5,Violent,0,HS Diploma,1
+Black,Male,18-25,0,Felony,0,HS Diploma,0
+White,Male,26-35,2,Misdemeanor,1,College,0
+Black,Female,18-25,2,Misdemeanor,1,No HS,1
+White,Male,26-35,0,Felony,0,College,0
+Hispanic,Male,18-25,0,Violent,0,HS Diploma,1
+White,Female,46+,0,Misdemeanor,0,No HS,0
+Black,Male,46+,5,Felony,0,HS Diploma,1
+White,Male,46+,0,Misdemeanor,1,College,0
+Hispanic,Male,46+,6,Misdemeanor,1,College,1
+Hispanic,Male,36-45,7,Felony,1,No HS,1
+Hispanic,Male,46+,7,Misdemeanor,0,No HS,1
+Black,Male,36-45,3,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,26-35,7,Misdemeanor,1,HS Diploma,1
+Black,Female,46+,2,Misdemeanor,1,College,0
+Black,Female,46+,5,Felony,0,College,1
+White,Male,26-35,5,Felony,0,College,1
+Hispanic,Male,46+,6,Felony,1,No HS,1
+Black,Male,18-25,3,Misdemeanor,1,No HS,1
+Hispanic,Male,18-25,6,Misdemeanor,1,College,1
+Hispanic,Male,18-25,3,Violent,1,HS Diploma,1
+White,Male,46+,7,Misdemeanor,0,HS Diploma,1
+White,Female,36-45,6,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,36-45,1,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,2,Misdemeanor,1,College,0
+White,Female,36-45,2,Felony,1,College,1
+White,Male,46+,7,Misdemeanor,0,HS Diploma,1
+White,Female,26-35,5,Misdemeanor,1,No HS,1
+White,Male,46+,2,Felony,0,No HS,1
+Hispanic,Male,26-35,2,Violent,0,No HS,0
+Black,Male,46+,0,Misdemeanor,0,No HS,0
+White,Male,18-25,6,Misdemeanor,1,No HS,1
+Black,Male,26-35,4,Misdemeanor,1,No HS,1
+White,Female,46+,7,Felony,1,HS Diploma,0
+Black,Male,36-45,1,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,1,Misdemeanor,1,College,0
+White,Male,46+,0,Misdemeanor,1,No HS,0
+White,Male,18-25,6,Felony,0,HS Diploma,1
+Hispanic,Male,18-25,3,Misdemeanor,0,HS Diploma,0
+White,Male,36-45,4,Violent,1,HS Diploma,1
+Asian,Male,46+,1,Misdemeanor,1,HS Diploma,0
+Hispanic,Female,26-35,7,Felony,1,No HS,1
+Hispanic,Female,26-35,3,Violent,0,HS Diploma,0
+White,Female,26-35,6,Violent,1,HS Diploma,1
+White,Female,26-35,7,Misdemeanor,0,No HS,1
+White,Female,18-25,2,Misdemeanor,1,HS Diploma,0
+White,Female,18-25,5,Violent,1,No HS,1
+Asian,Male,26-35,4,Misdemeanor,1,HS Diploma,0
+White,Male,46+,4,Violent,1,No HS,0
+White,Male,18-25,5,Felony,0,No HS,1
+Hispanic,Female,18-25,2,Violent,1,HS Diploma,1
+White,Male,46+,7,Felony,1,HS Diploma,1
+Black,Male,46+,7,Violent,0,No HS,1
+Asian,Female,18-25,1,Felony,1,College,0
+White,Male,46+,6,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,4,Misdemeanor,0,No HS,0
+White,Male,18-25,0,Misdemeanor,0,No HS,1
+Black,Male,36-45,0,Misdemeanor,0,HS Diploma,0
+White,Male,46+,0,Violent,1,HS Diploma,1
+Black,Male,46+,5,Felony,1,College,1
+Black,Female,46+,4,Felony,1,No HS,1
+White,Male,46+,1,Misdemeanor,1,HS Diploma,0
+Black,Male,46+,5,Violent,1,College,1
+White,Male,36-45,3,Misdemeanor,0,College,0
+Hispanic,Female,18-25,1,Misdemeanor,1,No HS,0
+Hispanic,Male,18-25,3,Felony,0,College,1
+Black,Male,18-25,6,Violent,1,HS Diploma,1
+White,Male,18-25,4,Misdemeanor,0,HS Diploma,0
+Hispanic,Male,26-35,6,Felony,1,No HS,1
+Black,Male,46+,2,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,3,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,36-45,7,Violent,1,HS Diploma,1
+Black,Male,46+,3,Felony,0,No HS,1
+White,Female,18-25,1,Felony,1,No HS,1
+White,Male,46+,4,Felony,0,College,0
+Hispanic,Male,36-45,7,Misdemeanor,0,No HS,1
+White,Male,26-35,7,Felony,0,HS Diploma,1
+Black,Male,18-25,1,Violent,1,College,1
+White,Male,26-35,4,Felony,0,College,1
+Black,Male,26-35,6,Felony,0,HS Diploma,1
+White,Male,36-45,3,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,2,Violent,1,HS Diploma,0
+Hispanic,Male,36-45,5,Misdemeanor,0,HS Diploma,1
+Hispanic,Female,46+,4,Misdemeanor,0,No HS,1
+Black,Male,46+,3,Felony,1,HS Diploma,1
+White,Male,18-25,5,Misdemeanor,0,No HS,0
+White,Male,46+,5,Violent,1,HS Diploma,0
+White,Male,18-25,2,Misdemeanor,0,HS Diploma,0
+Black,Female,18-25,1,Felony,0,HS Diploma,1
+Hispanic,Male,46+,1,Misdemeanor,0,HS Diploma,0
+Black,Male,18-25,4,Misdemeanor,1,College,1
+Hispanic,Female,18-25,4,Felony,0,HS Diploma,1
+Black,Male,26-35,4,Violent,1,No HS,1
+Black,Male,46+,1,Felony,1,HS Diploma,1
+White,Male,26-35,7,Felony,0,HS Diploma,1
+Black,Male,26-35,4,Violent,0,No HS,1
+Black,Male,26-35,3,Violent,0,HS Diploma,1
+Black,Male,46+,5,Misdemeanor,0,HS Diploma,1
+White,Male,46+,0,Misdemeanor,0,College,0
+White,Male,46+,7,Felony,0,HS Diploma,1
+White,Male,18-25,0,Felony,0,No HS,0
+White,Male,46+,4,Misdemeanor,0,HS Diploma,0
+Black,Male,26-35,3,Misdemeanor,1,HS Diploma,1
+Black,Female,36-45,3,Felony,0,No HS,1
+Black,Male,36-45,3,Misdemeanor,0,College,0
+Black,Male,26-35,5,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,2,Felony,0,HS Diploma,0
+Hispanic,Male,26-35,6,Felony,1,College,1
+Hispanic,Male,18-25,5,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,3,Violent,0,HS Diploma,1
+White,Male,46+,7,Misdemeanor,1,College,1
+White,Male,36-45,1,Felony,1,HS Diploma,1
+Black,Male,46+,6,Violent,1,HS Diploma,1
+Black,Male,18-25,1,Misdemeanor,0,College,1
+Asian,Male,26-35,7,Misdemeanor,1,HS Diploma,1
+Black,Male,18-25,3,Misdemeanor,1,HS Diploma,1
+White,Male,18-25,0,Misdemeanor,0,HS Diploma,1
+Black,Male,26-35,2,Misdemeanor,1,No HS,1
+Asian,Female,36-45,7,Violent,0,College,1
+Black,Male,36-45,5,Misdemeanor,0,College,1
+White,Male,36-45,1,Misdemeanor,1,HS Diploma,1
+White,Male,46+,6,Violent,0,No HS,1
+White,Male,46+,1,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,46+,6,Felony,1,HS Diploma,1
+Black,Male,18-25,1,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,36-45,5,Violent,0,No HS,1
+White,Male,46+,7,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,18-25,2,Felony,0,HS Diploma,0
+White,Male,18-25,3,Violent,1,HS Diploma,0
+White,Female,26-35,2,Misdemeanor,1,College,0
+White,Female,46+,7,Violent,1,No HS,1
+White,Male,18-25,3,Felony,1,No HS,1
+Asian,Male,18-25,4,Violent,1,No HS,1
+White,Male,18-25,7,Violent,1,College,1
+White,Male,46+,7,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,18-25,1,Felony,1,College,0
+Black,Female,26-35,5,Violent,0,College,1
+White,Male,46+,6,Misdemeanor,1,No HS,1
+White,Male,18-25,0,Felony,1,HS Diploma,0
+Hispanic,Male,46+,2,Misdemeanor,1,HS Diploma,0
+Black,Female,18-25,5,Felony,0,HS Diploma,1
+White,Male,36-45,2,Felony,1,HS Diploma,0
+White,Female,26-35,5,Felony,0,HS Diploma,1
+Black,Male,46+,1,Violent,1,College,0
+Black,Male,18-25,6,Felony,1,HS Diploma,1
+Hispanic,Male,46+,1,Felony,1,HS Diploma,1
+Hispanic,Male,18-25,5,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,46+,0,Violent,1,No HS,1
+Black,Male,26-35,0,Violent,0,HS Diploma,0
+Hispanic,Female,36-45,1,Violent,0,HS Diploma,1
+Black,Male,26-35,5,Violent,0,No HS,1
+Hispanic,Male,36-45,7,Violent,1,College,1
+Black,Male,26-35,3,Violent,0,HS Diploma,1
+Black,Male,46+,1,Misdemeanor,0,No HS,0
+Black,Male,36-45,0,Misdemeanor,1,HS Diploma,1
+White,Female,18-25,1,Violent,1,No HS,0
+Hispanic,Female,46+,0,Felony,0,No HS,1
+Hispanic,Male,36-45,4,Violent,0,HS Diploma,1
+White,Male,46+,3,Felony,0,HS Diploma,1
+Black,Male,18-25,5,Misdemeanor,1,No HS,1
+White,Male,18-25,0,Violent,1,No HS,0
+Hispanic,Female,46+,5,Felony,1,HS Diploma,1
+Black,Female,18-25,6,Felony,1,HS Diploma,1
+Black,Male,26-35,6,Felony,1,College,1
+White,Male,46+,7,Felony,0,No HS,1
+Hispanic,Male,46+,2,Misdemeanor,1,No HS,0
+White,Male,46+,2,Violent,1,College,1
+Black,Male,46+,5,Violent,0,HS Diploma,1
+Black,Female,46+,3,Misdemeanor,0,No HS,1
+Black,Female,18-25,3,Misdemeanor,0,HS Diploma,0
+White,Male,36-45,2,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,5,Felony,0,HS Diploma,1
+Hispanic,Male,18-25,5,Violent,1,No HS,1
+Black,Male,26-35,7,Misdemeanor,1,College,1
+White,Male,18-25,5,Misdemeanor,1,HS Diploma,1
+White,Male,46+,5,Violent,1,HS Diploma,1
+Hispanic,Male,46+,7,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,26-35,5,Misdemeanor,0,No HS,1
+Black,Male,46+,4,Misdemeanor,0,College,1
+Hispanic,Male,46+,7,Violent,0,No HS,1
+White,Male,26-35,6,Misdemeanor,0,No HS,1
+Black,Female,36-45,4,Misdemeanor,0,HS Diploma,1
+Black,Male,18-25,0,Violent,0,College,0
+Asian,Female,46+,3,Misdemeanor,1,HS Diploma,0
+Black,Male,46+,2,Felony,1,College,1
+White,Male,36-45,7,Misdemeanor,1,HS Diploma,0
+White,Male,46+,5,Felony,0,College,1
+White,Male,26-35,7,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,5,Felony,1,No HS,1
+White,Male,36-45,6,Misdemeanor,0,College,1
+White,Male,46+,3,Felony,1,No HS,1
+Asian,Male,26-35,2,Felony,1,HS Diploma,1
+Asian,Male,36-45,2,Violent,1,College,0
+White,Male,46+,0,Misdemeanor,1,College,1
+Hispanic,Male,26-35,7,Felony,0,HS Diploma,1
+Hispanic,Male,36-45,3,Violent,1,HS Diploma,1
+Black,Male,36-45,4,Misdemeanor,1,HS Diploma,1
+White,Male,46+,6,Misdemeanor,1,HS Diploma,1
+White,Male,36-45,3,Felony,1,College,0
+White,Male,36-45,6,Misdemeanor,1,No HS,1
+Hispanic,Female,26-35,6,Misdemeanor,1,HS Diploma,1
+White,Female,26-35,7,Felony,1,HS Diploma,1
+Black,Male,46+,2,Violent,1,HS Diploma,0
+Black,Male,36-45,4,Misdemeanor,0,No HS,1
+White,Male,46+,2,Felony,0,No HS,1
+White,Female,46+,6,Misdemeanor,0,College,0
+White,Female,46+,3,Violent,1,HS Diploma,0
+Hispanic,Male,46+,6,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,26-35,2,Misdemeanor,1,College,0
+White,Male,26-35,7,Violent,1,No HS,1
+White,Male,36-45,5,Felony,0,HS Diploma,1
+Hispanic,Male,46+,1,Violent,1,HS Diploma,1
+White,Male,26-35,6,Felony,1,HS Diploma,1
+Black,Male,18-25,4,Misdemeanor,0,HS Diploma,1
+Black,Female,36-45,7,Violent,1,HS Diploma,1
+Black,Female,46+,7,Violent,1,HS Diploma,1
+White,Male,26-35,5,Felony,1,HS Diploma,0
+Hispanic,Female,18-25,0,Violent,0,College,0
+White,Female,36-45,1,Violent,1,HS Diploma,0
+White,Male,26-35,5,Felony,1,College,1
+White,Male,36-45,2,Violent,0,No HS,1
+Asian,Female,36-45,3,Misdemeanor,1,No HS,0
+White,Male,46+,6,Violent,1,HS Diploma,1
+Hispanic,Female,46+,2,Misdemeanor,0,HS Diploma,0
+White,Male,46+,0,Misdemeanor,1,HS Diploma,0
+White,Male,26-35,3,Felony,0,HS Diploma,0
+Hispanic,Male,26-35,4,Violent,1,No HS,1
+Hispanic,Male,18-25,4,Misdemeanor,1,No HS,1
+Hispanic,Female,18-25,2,Felony,1,HS Diploma,1
+White,Male,46+,1,Felony,0,College,0
+Hispanic,Male,46+,3,Misdemeanor,0,HS Diploma,1
+White,Female,46+,5,Misdemeanor,1,HS Diploma,1
+White,Female,36-45,7,Misdemeanor,0,No HS,1
+Black,Female,18-25,1,Felony,1,HS Diploma,0
+White,Male,36-45,2,Felony,1,HS Diploma,1
+Black,Male,26-35,7,Misdemeanor,1,No HS,1
+Black,Male,36-45,5,Violent,0,No HS,1
+Asian,Male,36-45,5,Felony,1,HS Diploma,0
+Black,Male,46+,3,Violent,0,No HS,1
+White,Male,18-25,4,Felony,1,No HS,1
+Hispanic,Male,26-35,4,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,7,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,2,Misdemeanor,1,HS Diploma,1
+White,Male,46+,3,Misdemeanor,0,HS Diploma,0
+White,Male,18-25,7,Misdemeanor,1,College,0
+Black,Male,26-35,5,Felony,1,College,1
+Black,Female,26-35,2,Violent,1,HS Diploma,1
+White,Male,26-35,4,Felony,1,No HS,1
+Hispanic,Male,46+,5,Misdemeanor,0,No HS,1
+Hispanic,Male,26-35,5,Violent,1,HS Diploma,1
+White,Male,18-25,0,Felony,0,HS Diploma,1
+Hispanic,Male,36-45,1,Misdemeanor,0,HS Diploma,1
+White,Male,18-25,2,Misdemeanor,1,HS Diploma,0
+Black,Female,18-25,5,Misdemeanor,0,College,1
+Hispanic,Female,36-45,0,Misdemeanor,1,College,0
+White,Female,18-25,4,Violent,1,College,1
+White,Male,18-25,6,Felony,1,No HS,1
+Black,Female,26-35,2,Violent,1,College,1
+Hispanic,Male,26-35,7,Violent,1,HS Diploma,1
+White,Male,46+,7,Misdemeanor,1,HS Diploma,0
+White,Female,46+,4,Misdemeanor,1,No HS,0
+Hispanic,Male,18-25,6,Violent,0,College,1
+White,Male,46+,4,Misdemeanor,1,No HS,0
+White,Male,36-45,2,Misdemeanor,0,No HS,0
+White,Female,36-45,0,Misdemeanor,0,No HS,0
+White,Male,46+,2,Felony,1,HS Diploma,1
+Black,Male,46+,6,Misdemeanor,0,HS Diploma,1
+Black,Male,36-45,7,Misdemeanor,1,College,1
+White,Female,46+,7,Misdemeanor,1,HS Diploma,1
+Black,Female,36-45,7,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,6,Misdemeanor,1,HS Diploma,0
+Black,Male,46+,6,Misdemeanor,0,No HS,1
+Hispanic,Female,26-35,7,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,18-25,7,Felony,0,No HS,1
+White,Male,26-35,5,Violent,1,HS Diploma,1
+White,Female,26-35,4,Violent,0,College,1
+Black,Male,26-35,3,Violent,1,No HS,0
+Hispanic,Male,26-35,4,Felony,0,HS Diploma,1
+White,Male,18-25,5,Violent,0,No HS,1
+Hispanic,Female,46+,6,Violent,1,HS Diploma,1
+White,Male,18-25,2,Felony,1,HS Diploma,0
+White,Male,26-35,0,Felony,1,College,0
+Hispanic,Female,46+,4,Misdemeanor,1,College,1
+White,Male,26-35,0,Misdemeanor,1,College,1
+Black,Male,46+,5,Misdemeanor,0,No HS,1
+White,Male,36-45,0,Felony,0,HS Diploma,1
+White,Male,18-25,7,Misdemeanor,1,College,1
+Black,Male,46+,7,Violent,1,HS Diploma,1
+Asian,Male,46+,1,Misdemeanor,1,College,0
+Black,Male,46+,5,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,0,Misdemeanor,0,HS Diploma,0
+Black,Male,46+,4,Felony,1,No HS,1
+White,Male,26-35,4,Misdemeanor,1,No HS,1
+Black,Male,46+,2,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,2,Felony,1,HS Diploma,0
+White,Female,46+,7,Violent,1,HS Diploma,1
+Black,Male,46+,6,Felony,0,No HS,1
+White,Male,46+,0,Felony,1,College,1
+Black,Male,26-35,5,Felony,1,College,1
+Hispanic,Male,36-45,5,Felony,1,HS Diploma,1
+White,Male,36-45,3,Misdemeanor,1,HS Diploma,1
+White,Male,36-45,6,Misdemeanor,0,No HS,1
+Black,Male,36-45,5,Violent,0,HS Diploma,1
+Hispanic,Female,36-45,6,Violent,1,College,1
+White,Male,26-35,5,Felony,0,HS Diploma,1
+White,Male,36-45,4,Felony,0,College,1
+Black,Male,46+,0,Misdemeanor,0,HS Diploma,0
+White,Male,36-45,5,Felony,1,HS Diploma,1
+Black,Female,18-25,2,Misdemeanor,0,HS Diploma,1
+White,Male,46+,4,Misdemeanor,1,HS Diploma,0
+White,Male,18-25,1,Misdemeanor,1,HS Diploma,1
+Black,Female,36-45,6,Felony,1,HS Diploma,1
+Black,Male,46+,5,Misdemeanor,1,College,1
+White,Male,46+,2,Misdemeanor,1,College,1
+White,Male,46+,5,Felony,0,HS Diploma,1
+White,Male,26-35,1,Violent,1,HS Diploma,1
+White,Female,46+,4,Violent,0,HS Diploma,1
+White,Male,46+,3,Misdemeanor,0,College,1
+White,Male,46+,6,Felony,0,College,1
+Hispanic,Male,36-45,0,Violent,0,College,1
+Black,Female,26-35,0,Violent,1,No HS,0
+Hispanic,Male,36-45,3,Felony,0,College,1
+White,Male,36-45,0,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,5,Violent,0,HS Diploma,1
+White,Male,26-35,7,Misdemeanor,1,College,1
+White,Male,26-35,5,Felony,1,HS Diploma,1
+Black,Male,36-45,0,Violent,0,HS Diploma,1
+Black,Male,46+,6,Felony,0,HS Diploma,1
+White,Male,26-35,1,Felony,0,No HS,1
+White,Male,36-45,0,Misdemeanor,0,No HS,0
+White,Male,46+,7,Misdemeanor,1,HS Diploma,1
+White,Male,36-45,1,Felony,0,College,1
+Black,Male,26-35,0,Felony,1,College,1
+White,Female,36-45,5,Misdemeanor,0,No HS,1
+Black,Male,36-45,0,Misdemeanor,0,HS Diploma,0
+Black,Male,36-45,7,Misdemeanor,1,College,1
+White,Female,46+,2,Felony,0,HS Diploma,1
+White,Female,18-25,6,Felony,1,College,1
+Black,Male,36-45,6,Misdemeanor,0,College,1
+White,Male,18-25,7,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,46+,6,Felony,1,College,1
+White,Male,18-25,3,Misdemeanor,1,HS Diploma,1
+Hispanic,Female,26-35,2,Misdemeanor,0,HS Diploma,1
+White,Male,18-25,0,Misdemeanor,1,College,1
+Black,Male,18-25,7,Violent,1,College,1
+Hispanic,Male,36-45,1,Felony,1,HS Diploma,1
+Hispanic,Female,46+,7,Felony,0,College,1
+Black,Male,36-45,0,Misdemeanor,0,College,1
+White,Male,46+,6,Felony,1,College,1
+Black,Male,26-35,4,Felony,1,No HS,0
+White,Male,26-35,4,Misdemeanor,1,College,1
+Hispanic,Male,18-25,4,Violent,0,College,1
+Black,Female,46+,4,Felony,0,College,1
+Hispanic,Female,26-35,6,Violent,0,HS Diploma,1
+Black,Male,46+,0,Felony,0,College,0
+Black,Male,18-25,4,Misdemeanor,0,No HS,1
+White,Male,26-35,3,Felony,1,College,0
+Black,Male,46+,0,Misdemeanor,0,No HS,1
+Black,Male,46+,2,Misdemeanor,0,College,1
+Black,Male,46+,7,Felony,1,College,1
+Hispanic,Male,36-45,7,Felony,1,No HS,1
+Hispanic,Male,46+,0,Misdemeanor,1,College,0
+Black,Female,26-35,1,Felony,1,College,1
+White,Male,46+,6,Felony,0,College,1
+Black,Male,46+,6,Violent,1,No HS,1
+White,Female,36-45,3,Felony,0,College,1
+White,Male,36-45,0,Misdemeanor,0,HS Diploma,1
+Black,Male,18-25,2,Violent,1,HS Diploma,0
+Black,Male,18-25,1,Violent,1,College,0
+Asian,Male,26-35,5,Felony,1,HS Diploma,1
+Black,Male,46+,1,Felony,0,College,1
+Asian,Female,26-35,7,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,7,Violent,1,No HS,1
+Black,Male,36-45,2,Misdemeanor,0,HS Diploma,1
+Asian,Female,18-25,6,Felony,1,HS Diploma,1
+Black,Female,26-35,5,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,2,Misdemeanor,1,HS Diploma,1
+Black,Male,36-45,2,Misdemeanor,1,College,1
+Hispanic,Male,46+,6,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,26-35,2,Felony,0,College,0
+Black,Male,36-45,6,Violent,0,HS Diploma,1
+Hispanic,Male,26-35,4,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,26-35,3,Felony,0,HS Diploma,1
+White,Female,46+,7,Felony,1,HS Diploma,1
+Black,Male,26-35,2,Misdemeanor,0,HS Diploma,1
+Asian,Male,26-35,4,Violent,1,HS Diploma,0
+White,Female,36-45,0,Misdemeanor,1,No HS,0
+Black,Male,46+,1,Violent,1,HS Diploma,0
+Black,Male,46+,6,Violent,1,College,1
+White,Male,18-25,6,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,18-25,0,Violent,0,College,1
+White,Male,26-35,0,Felony,1,No HS,0
+Black,Male,36-45,5,Violent,0,No HS,1
+Black,Male,18-25,7,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,4,Violent,0,HS Diploma,1
+White,Male,26-35,4,Felony,0,College,1
+Black,Male,18-25,2,Felony,1,College,0
+White,Male,26-35,2,Felony,0,College,0
+Black,Male,46+,4,Felony,1,College,1
+White,Male,36-45,3,Misdemeanor,0,College,1
+Hispanic,Male,18-25,5,Violent,0,College,1
+White,Female,46+,5,Misdemeanor,0,HS Diploma,0
+White,Female,36-45,7,Violent,1,HS Diploma,1
+Hispanic,Male,18-25,2,Misdemeanor,0,College,0
+White,Male,36-45,7,Violent,0,HS Diploma,1
+Black,Male,36-45,5,Violent,0,No HS,1
+Black,Male,36-45,0,Misdemeanor,1,No HS,0
+White,Female,26-35,2,Felony,0,HS Diploma,0
+White,Male,46+,2,Misdemeanor,0,No HS,1
+White,Male,18-25,3,Felony,1,HS Diploma,0
+Asian,Male,26-35,4,Misdemeanor,0,HS Diploma,0
+Hispanic,Male,46+,7,Misdemeanor,0,College,1
+White,Male,18-25,3,Violent,0,HS Diploma,1
+White,Male,46+,6,Misdemeanor,0,College,1
+Black,Female,36-45,2,Misdemeanor,0,No HS,0
+Black,Male,46+,3,Felony,0,College,1
+White,Male,46+,5,Violent,1,HS Diploma,0
+White,Female,46+,2,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,18-25,3,Misdemeanor,1,College,0
+Hispanic,Male,18-25,1,Felony,0,No HS,1
+White,Female,46+,7,Violent,1,HS Diploma,1
+White,Male,18-25,1,Violent,1,HS Diploma,1
+White,Male,36-45,7,Felony,1,HS Diploma,0
+White,Female,36-45,2,Misdemeanor,1,College,1
+White,Male,26-35,3,Felony,1,College,1
+White,Male,36-45,2,Violent,1,HS Diploma,1
+Black,Male,26-35,3,Violent,0,College,1
+White,Female,46+,4,Misdemeanor,0,College,0
+White,Male,26-35,3,Misdemeanor,1,HS Diploma,0
+Black,Male,46+,3,Misdemeanor,0,No HS,1
+Black,Male,36-45,6,Felony,1,HS Diploma,1
+Hispanic,Male,26-35,2,Felony,0,No HS,1
+White,Female,18-25,3,Misdemeanor,1,HS Diploma,1
+White,Male,46+,2,Misdemeanor,1,HS Diploma,0
+White,Male,36-45,2,Violent,1,No HS,1
+Hispanic,Female,18-25,0,Misdemeanor,0,No HS,0
+White,Female,36-45,6,Felony,1,HS Diploma,1
+White,Male,26-35,2,Felony,1,No HS,1
+White,Female,18-25,3,Felony,0,HS Diploma,1
+Asian,Male,18-25,7,Misdemeanor,0,College,1
+Asian,Male,26-35,6,Felony,1,No HS,1
+Black,Male,46+,7,Felony,0,HS Diploma,1
+White,Male,36-45,1,Violent,1,College,0
+Hispanic,Female,18-25,4,Felony,1,HS Diploma,1
+Black,Male,26-35,3,Felony,0,No HS,1
+Black,Male,46+,5,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,18-25,6,Violent,0,College,1
+White,Male,26-35,6,Felony,1,HS Diploma,0
+Hispanic,Male,36-45,3,Felony,0,No HS,1
+Hispanic,Male,46+,3,Misdemeanor,0,No HS,0
+Black,Male,36-45,0,Felony,1,HS Diploma,1
+Black,Male,46+,1,Misdemeanor,1,HS Diploma,0
+White,Male,46+,3,Misdemeanor,0,No HS,1
+Black,Male,46+,5,Felony,1,College,1
+Black,Male,26-35,2,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,1,Felony,1,HS Diploma,0
+White,Male,36-45,1,Felony,0,No HS,1
+Black,Male,46+,3,Misdemeanor,1,College,1
+Asian,Male,26-35,6,Misdemeanor,1,College,1
+White,Male,26-35,2,Violent,0,No HS,1
+White,Female,26-35,1,Violent,1,HS Diploma,1
+Hispanic,Male,26-35,6,Felony,1,HS Diploma,1
+White,Female,36-45,4,Felony,1,HS Diploma,0
+Asian,Female,26-35,2,Felony,0,No HS,1
+Black,Male,46+,1,Misdemeanor,1,College,1
+Hispanic,Male,46+,1,Felony,0,HS Diploma,0
+Hispanic,Male,46+,2,Violent,0,HS Diploma,1
+Hispanic,Female,26-35,0,Felony,1,HS Diploma,0
+White,Male,18-25,2,Felony,0,HS Diploma,1
+White,Male,26-35,4,Felony,1,HS Diploma,0
+White,Female,46+,7,Felony,1,HS Diploma,1
+Hispanic,Male,46+,0,Felony,1,HS Diploma,1
+Black,Male,36-45,3,Felony,0,HS Diploma,1
+White,Female,46+,0,Misdemeanor,1,No HS,0
+White,Male,46+,4,Misdemeanor,0,HS Diploma,1
+White,Male,18-25,4,Felony,1,College,1
+Black,Male,46+,7,Misdemeanor,1,College,1
+White,Male,46+,4,Misdemeanor,1,No HS,0
+White,Male,26-35,1,Misdemeanor,1,HS Diploma,0
+Black,Male,36-45,0,Misdemeanor,0,College,1
+White,Male,26-35,4,Misdemeanor,0,No HS,1
+White,Male,26-35,5,Misdemeanor,0,College,1
+White,Male,18-25,0,Felony,0,No HS,1
+Hispanic,Female,46+,5,Violent,0,College,1
+White,Male,26-35,0,Violent,1,HS Diploma,0
+Black,Male,46+,7,Violent,0,HS Diploma,1
+Black,Male,18-25,3,Violent,1,College,1
+Black,Male,46+,5,Felony,1,College,1
+White,Male,18-25,3,Misdemeanor,0,HS Diploma,0
+White,Male,36-45,6,Felony,1,HS Diploma,1
+White,Male,36-45,3,Misdemeanor,1,HS Diploma,0
+White,Male,46+,7,Felony,1,No HS,0
+Black,Male,46+,5,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,6,Misdemeanor,1,College,1
+Black,Female,18-25,1,Felony,0,HS Diploma,1
+White,Male,46+,6,Misdemeanor,0,College,1
+Black,Female,36-45,6,Misdemeanor,1,No HS,1
+Hispanic,Female,46+,1,Violent,0,No HS,1
+White,Male,36-45,3,Misdemeanor,1,HS Diploma,0
+White,Male,36-45,4,Misdemeanor,1,HS Diploma,0
+White,Female,26-35,2,Misdemeanor,0,No HS,0
+White,Male,18-25,5,Felony,0,HS Diploma,1
+White,Male,36-45,7,Misdemeanor,0,College,1
+White,Male,36-45,6,Violent,1,College,1
+Hispanic,Male,18-25,1,Misdemeanor,0,No HS,1
+Black,Male,36-45,2,Misdemeanor,0,HS Diploma,1
+Asian,Male,26-35,1,Misdemeanor,0,HS Diploma,1
+Black,Male,18-25,0,Felony,0,HS Diploma,1
+Hispanic,Male,46+,6,Violent,1,College,1
+Hispanic,Male,46+,4,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,18-25,1,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,0,Misdemeanor,1,College,1
+Black,Male,26-35,4,Violent,1,No HS,0
+Black,Male,46+,5,Misdemeanor,1,HS Diploma,1
+Black,Male,18-25,1,Felony,1,HS Diploma,1
+Black,Female,18-25,4,Misdemeanor,0,College,1
+Hispanic,Male,26-35,1,Felony,0,No HS,1
+Asian,Male,26-35,3,Violent,1,HS Diploma,1
+Hispanic,Male,26-35,1,Felony,0,HS Diploma,0
+Hispanic,Male,36-45,1,Violent,1,No HS,0
+Black,Male,26-35,0,Felony,1,College,0
+Black,Male,26-35,3,Violent,0,HS Diploma,1
+White,Male,18-25,2,Felony,1,HS Diploma,0
+White,Female,46+,4,Felony,0,HS Diploma,0
+Hispanic,Female,46+,7,Violent,0,No HS,1
+Hispanic,Male,36-45,6,Misdemeanor,1,No HS,1
+Black,Female,46+,2,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,26-35,7,Misdemeanor,1,College,1
+White,Male,36-45,2,Misdemeanor,1,HS Diploma,0
+Black,Male,18-25,6,Violent,0,HS Diploma,1
+Hispanic,Male,26-35,3,Misdemeanor,0,HS Diploma,1
+White,Female,46+,3,Misdemeanor,1,No HS,1
+White,Male,46+,3,Misdemeanor,1,HS Diploma,1
+White,Male,18-25,0,Felony,1,HS Diploma,0
+White,Female,46+,7,Felony,1,HS Diploma,1
+White,Male,26-35,0,Felony,0,HS Diploma,1
+White,Male,36-45,4,Felony,0,No HS,1
+Hispanic,Male,26-35,3,Misdemeanor,1,No HS,1
+Hispanic,Male,18-25,2,Violent,1,College,1
+Black,Male,18-25,4,Misdemeanor,0,No HS,1
+Black,Male,26-35,0,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,6,Violent,1,College,1
+Hispanic,Female,46+,6,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,1,Felony,1,No HS,1
+Black,Male,26-35,1,Misdemeanor,1,No HS,0
+Black,Male,46+,4,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,7,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,36-45,0,Felony,1,HS Diploma,1
+Black,Male,36-45,4,Misdemeanor,1,College,1
+Hispanic,Male,46+,0,Felony,1,No HS,0
+White,Male,18-25,6,Felony,1,HS Diploma,1
+Black,Female,36-45,6,Felony,0,HS Diploma,1
+White,Male,26-35,3,Misdemeanor,1,College,1
+Hispanic,Male,36-45,1,Felony,1,HS Diploma,1
+Hispanic,Male,26-35,7,Violent,0,HS Diploma,1
+White,Male,26-35,2,Misdemeanor,0,HS Diploma,0
+Black,Male,46+,3,Violent,1,No HS,1
+White,Female,36-45,2,Misdemeanor,0,HS Diploma,0
+Hispanic,Male,46+,4,Misdemeanor,0,No HS,1
+White,Male,36-45,1,Misdemeanor,1,College,0
+White,Male,46+,6,Misdemeanor,0,College,1
+White,Male,36-45,2,Felony,0,HS Diploma,0
+Black,Female,46+,5,Felony,1,No HS,1
+White,Male,46+,4,Misdemeanor,0,HS Diploma,1
+Black,Male,18-25,0,Violent,1,HS Diploma,1
+Black,Male,46+,3,Violent,1,No HS,1
+White,Female,46+,0,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,6,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,6,Misdemeanor,0,HS Diploma,0
+Hispanic,Male,36-45,3,Felony,1,HS Diploma,1
+White,Male,26-35,1,Felony,0,HS Diploma,0
+Hispanic,Male,36-45,2,Misdemeanor,0,HS Diploma,1
+Black,Male,36-45,0,Felony,0,HS Diploma,1
+Black,Male,26-35,0,Violent,1,HS Diploma,0
+White,Male,18-25,2,Felony,0,HS Diploma,1
+White,Male,46+,2,Felony,0,No HS,1
+Black,Male,26-35,4,Misdemeanor,0,HS Diploma,1
+White,Female,46+,3,Misdemeanor,1,No HS,0
+Black,Male,46+,6,Violent,0,College,1
+Black,Female,26-35,6,Felony,1,College,1
+White,Male,36-45,5,Felony,1,HS Diploma,1
+White,Male,26-35,7,Misdemeanor,0,No HS,1
+Asian,Female,26-35,5,Felony,0,HS Diploma,1
+Black,Male,18-25,6,Felony,0,College,1
+Hispanic,Male,18-25,4,Felony,0,HS Diploma,1
+White,Male,26-35,0,Felony,1,HS Diploma,0
+White,Male,18-25,2,Violent,0,No HS,1
+Black,Male,46+,6,Misdemeanor,1,College,1
+Hispanic,Male,36-45,1,Misdemeanor,1,College,0
+Black,Male,26-35,0,Violent,0,HS Diploma,1
+Black,Male,46+,0,Misdemeanor,1,HS Diploma,0
+White,Male,26-35,5,Violent,0,HS Diploma,0
+Asian,Male,36-45,3,Misdemeanor,1,HS Diploma,0
+Black,Female,36-45,4,Felony,0,HS Diploma,1
+White,Male,46+,5,Violent,0,HS Diploma,1
+White,Male,26-35,3,Felony,0,College,1
+White,Male,26-35,0,Felony,0,College,0
+White,Male,46+,2,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,1,Misdemeanor,0,College,1
+White,Male,36-45,3,Violent,1,HS Diploma,1
+White,Female,46+,5,Violent,1,No HS,1
+Black,Male,46+,7,Misdemeanor,0,HS Diploma,1
+Black,Male,18-25,7,Violent,1,College,1
+Black,Male,46+,0,Misdemeanor,1,No HS,0
+Black,Male,18-25,7,Felony,1,HS Diploma,1
+White,Male,18-25,5,Misdemeanor,0,College,1
+Black,Male,18-25,5,Misdemeanor,0,HS Diploma,1
+Asian,Male,46+,4,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,36-45,6,Felony,1,HS Diploma,1
+White,Male,46+,7,Felony,0,College,1
+Black,Male,26-35,3,Felony,1,HS Diploma,1
+White,Female,26-35,0,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,4,Misdemeanor,1,No HS,0
+Hispanic,Male,46+,4,Misdemeanor,1,College,0
+White,Female,46+,7,Violent,0,HS Diploma,1
+Hispanic,Male,36-45,1,Violent,0,College,1
+White,Male,46+,2,Violent,1,HS Diploma,0
+Hispanic,Male,36-45,1,Misdemeanor,1,College,0
+White,Female,26-35,4,Violent,1,No HS,1
+Black,Male,18-25,3,Misdemeanor,1,No HS,1
+White,Male,46+,5,Felony,1,HS Diploma,1
+White,Male,26-35,2,Felony,0,No HS,1
+Hispanic,Male,26-35,4,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,46+,2,Felony,0,HS Diploma,1
+Hispanic,Female,46+,3,Misdemeanor,1,No HS,1
+White,Male,18-25,0,Felony,1,HS Diploma,0
+Hispanic,Male,46+,0,Misdemeanor,1,No HS,0
+Hispanic,Female,46+,4,Felony,1,College,1
+White,Male,36-45,6,Felony,0,HS Diploma,1
+Black,Male,26-35,7,Misdemeanor,1,College,1
+White,Male,36-45,4,Violent,1,HS Diploma,1
+Black,Female,18-25,1,Violent,1,HS Diploma,1
+Hispanic,Male,26-35,4,Violent,0,HS Diploma,1
+White,Male,36-45,0,Felony,0,HS Diploma,0
+White,Male,36-45,0,Violent,0,College,1
+White,Male,46+,1,Felony,1,HS Diploma,0
+Black,Female,36-45,5,Misdemeanor,0,HS Diploma,1
+White,Female,36-45,3,Misdemeanor,1,No HS,0
+White,Female,18-25,2,Felony,0,College,0
+Black,Male,26-35,0,Felony,0,College,1
+Black,Male,46+,6,Violent,0,HS Diploma,1
+White,Male,36-45,2,Violent,1,HS Diploma,1
+Asian,Male,18-25,4,Felony,1,HS Diploma,1
+Hispanic,Female,46+,4,Misdemeanor,0,No HS,1
+Black,Female,46+,5,Felony,0,HS Diploma,1
+Hispanic,Male,26-35,3,Misdemeanor,1,No HS,1
+White,Female,26-35,5,Misdemeanor,1,HS Diploma,1
+Black,Female,46+,2,Felony,1,No HS,1
+Hispanic,Male,36-45,0,Misdemeanor,1,HS Diploma,1
+White,Female,26-35,6,Felony,1,No HS,1
+Hispanic,Male,36-45,1,Felony,1,HS Diploma,1
+Black,Male,36-45,6,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,0,Misdemeanor,1,HS Diploma,0
+White,Male,46+,7,Misdemeanor,1,HS Diploma,1
+Black,Male,18-25,2,Misdemeanor,1,No HS,0
+Black,Female,26-35,7,Misdemeanor,0,No HS,1
+White,Female,46+,2,Misdemeanor,1,HS Diploma,0
+Black,Female,36-45,0,Violent,0,College,0
+Black,Male,26-35,0,Felony,1,HS Diploma,1
+Hispanic,Male,36-45,3,Misdemeanor,0,No HS,0
+Black,Male,36-45,4,Violent,0,HS Diploma,1
+Black,Female,26-35,7,Felony,1,HS Diploma,1
+Black,Male,18-25,5,Misdemeanor,0,No HS,1
+Black,Male,26-35,3,Felony,1,College,1
+Hispanic,Male,26-35,6,Felony,0,College,1
+White,Male,36-45,7,Felony,1,No HS,1
+White,Male,18-25,7,Felony,1,HS Diploma,1
+Black,Male,18-25,6,Misdemeanor,0,HS Diploma,1
+Black,Male,46+,0,Violent,0,No HS,1
+Hispanic,Male,18-25,0,Misdemeanor,1,College,0
+White,Male,36-45,1,Felony,1,College,0
+Black,Male,36-45,4,Violent,1,HS Diploma,0
+White,Male,18-25,5,Misdemeanor,0,HS Diploma,0
+Black,Male,36-45,5,Felony,1,HS Diploma,1
+Hispanic,Male,46+,1,Violent,1,No HS,0
+Hispanic,Male,18-25,4,Violent,1,No HS,1
+Hispanic,Male,26-35,6,Felony,1,College,1
+Black,Male,26-35,4,Misdemeanor,0,College,1
+Black,Male,26-35,2,Felony,0,HS Diploma,0
+Black,Male,46+,4,Felony,1,No HS,1
+Black,Male,46+,5,Felony,0,College,1
+Hispanic,Male,46+,6,Misdemeanor,0,College,1
+White,Female,36-45,0,Violent,1,College,1
+Black,Female,36-45,4,Misdemeanor,0,HS Diploma,1
+Black,Female,36-45,3,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,18-25,2,Felony,0,College,0
+Hispanic,Male,18-25,1,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,5,Misdemeanor,1,No HS,0
+White,Male,36-45,6,Misdemeanor,1,College,1
+Hispanic,Male,46+,4,Misdemeanor,0,No HS,1
+White,Male,18-25,1,Misdemeanor,0,College,0
+White,Male,46+,0,Felony,1,HS Diploma,1
+White,Female,36-45,7,Felony,1,HS Diploma,0
+Asian,Female,18-25,1,Violent,0,College,1
+White,Female,46+,4,Misdemeanor,0,No HS,1
+Black,Male,26-35,1,Misdemeanor,0,HS Diploma,0
+Black,Female,18-25,0,Felony,0,HS Diploma,1
+Black,Male,36-45,7,Misdemeanor,1,HS Diploma,1
+White,Male,26-35,7,Misdemeanor,1,No HS,0
+Black,Male,26-35,7,Violent,1,College,1
+Hispanic,Male,26-35,4,Felony,0,HS Diploma,1
+Black,Male,46+,1,Misdemeanor,1,HS Diploma,1
+White,Male,18-25,1,Misdemeanor,1,No HS,0
+White,Male,18-25,0,Misdemeanor,0,College,0
+White,Male,36-45,3,Misdemeanor,0,No HS,0
+White,Male,26-35,3,Misdemeanor,1,College,0
+Black,Male,18-25,2,Misdemeanor,1,HS Diploma,0
+White,Male,36-45,0,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,26-35,3,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,6,Felony,0,College,1
+Black,Male,18-25,7,Violent,0,HS Diploma,1
+Black,Female,46+,1,Misdemeanor,0,College,1
+White,Male,46+,6,Misdemeanor,1,No HS,1
+Black,Male,36-45,0,Felony,1,College,0
+White,Male,46+,1,Felony,1,No HS,0
+Black,Male,26-35,1,Felony,0,HS Diploma,1
+Black,Male,46+,2,Misdemeanor,1,No HS,0
+White,Female,18-25,5,Felony,1,College,1
+White,Male,26-35,2,Misdemeanor,0,College,1
+White,Male,18-25,4,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,46+,7,Violent,1,HS Diploma,1
+White,Male,46+,5,Felony,1,College,1
+Hispanic,Male,36-45,0,Misdemeanor,0,College,0
+Black,Male,46+,3,Violent,1,HS Diploma,1
+White,Male,26-35,6,Felony,1,College,1
+Hispanic,Female,46+,2,Felony,1,HS Diploma,0
+Hispanic,Female,26-35,0,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,7,Misdemeanor,0,HS Diploma,1
+White,Male,18-25,2,Felony,1,HS Diploma,0
+Black,Male,26-35,3,Felony,0,HS Diploma,1
+Asian,Male,26-35,2,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,46+,7,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,4,Felony,1,College,1
+Black,Male,26-35,0,Felony,1,HS Diploma,0
+Black,Male,36-45,5,Violent,1,HS Diploma,1
+Black,Male,26-35,5,Misdemeanor,0,No HS,1
+Black,Male,36-45,0,Misdemeanor,1,HS Diploma,0
+White,Female,26-35,1,Violent,0,No HS,1
+Black,Female,36-45,6,Felony,1,HS Diploma,1
+Black,Male,36-45,5,Misdemeanor,1,College,1
+Black,Male,36-45,5,Felony,0,HS Diploma,1
+Black,Male,26-35,7,Misdemeanor,1,HS Diploma,1
+White,Male,36-45,6,Misdemeanor,0,HS Diploma,1
+Black,Male,36-45,4,Misdemeanor,1,HS Diploma,1
+White,Female,46+,2,Misdemeanor,1,HS Diploma,0
+White,Male,36-45,7,Felony,0,College,1
+Hispanic,Female,46+,1,Misdemeanor,0,College,0
+Black,Male,18-25,2,Misdemeanor,0,HS Diploma,0
+Black,Male,18-25,7,Felony,0,No HS,1
+Hispanic,Male,26-35,4,Felony,0,No HS,1
+White,Male,26-35,1,Misdemeanor,1,HS Diploma,1
+White,Female,46+,7,Violent,1,HS Diploma,1
+White,Male,18-25,7,Felony,1,No HS,1
+Black,Male,36-45,3,Felony,1,HS Diploma,1
+Black,Male,26-35,0,Misdemeanor,1,No HS,1
+Hispanic,Male,46+,4,Misdemeanor,0,No HS,1
+White,Male,36-45,7,Misdemeanor,1,HS Diploma,1
+Black,Male,36-45,6,Misdemeanor,0,College,1
+Black,Female,46+,4,Misdemeanor,0,No HS,1
+White,Female,46+,6,Misdemeanor,0,HS Diploma,1
+Black,Male,36-45,2,Felony,1,HS Diploma,0
+White,Male,46+,3,Misdemeanor,0,No HS,1
+Black,Male,36-45,3,Violent,0,No HS,1
+White,Male,46+,5,Misdemeanor,0,No HS,1
+White,Male,36-45,4,Felony,0,College,1
+White,Male,26-35,4,Misdemeanor,1,HS Diploma,1
+Black,Male,36-45,0,Felony,1,HS Diploma,0
+Hispanic,Female,18-25,3,Misdemeanor,0,HS Diploma,0
+White,Male,36-45,4,Felony,0,HS Diploma,1
+Hispanic,Male,26-35,7,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,26-35,0,Misdemeanor,1,HS Diploma,0
+White,Female,36-45,2,Misdemeanor,1,HS Diploma,1
+White,Male,46+,3,Felony,1,HS Diploma,0
+White,Female,36-45,1,Misdemeanor,1,No HS,0
+White,Male,46+,1,Felony,0,HS Diploma,1
+Black,Male,18-25,4,Misdemeanor,1,HS Diploma,0
+White,Male,26-35,6,Misdemeanor,0,HS Diploma,0
+Black,Male,46+,6,Felony,1,HS Diploma,1
+Black,Female,46+,4,Felony,1,College,1
+Black,Male,18-25,5,Felony,0,HS Diploma,1
+Black,Female,36-45,0,Misdemeanor,0,College,0
+Hispanic,Male,36-45,6,Misdemeanor,1,College,1
+Black,Male,18-25,4,Felony,1,College,1
+Hispanic,Male,46+,4,Violent,1,HS Diploma,1
+Black,Male,36-45,0,Misdemeanor,1,HS Diploma,0
+Black,Female,18-25,6,Felony,0,No HS,1
+White,Male,26-35,1,Felony,1,HS Diploma,0
+White,Male,46+,7,Felony,1,HS Diploma,1
+White,Male,46+,0,Violent,1,No HS,0
+White,Male,36-45,7,Felony,0,College,1
+White,Male,26-35,7,Felony,1,HS Diploma,1
+Black,Male,46+,5,Misdemeanor,1,College,1
+White,Male,46+,5,Misdemeanor,1,HS Diploma,1
+White,Male,36-45,6,Felony,0,HS Diploma,0
+White,Male,26-35,3,Felony,0,HS Diploma,1
+Black,Male,26-35,3,Felony,0,HS Diploma,1
+Black,Male,18-25,4,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,36-45,4,Felony,1,College,1
+Black,Male,36-45,5,Felony,0,No HS,1
+White,Male,18-25,1,Violent,1,No HS,1
+White,Male,46+,1,Misdemeanor,1,No HS,1
+White,Female,26-35,2,Misdemeanor,0,College,1
+White,Male,18-25,3,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,26-35,6,Felony,1,College,1
+White,Female,26-35,3,Violent,1,HS Diploma,1
+White,Male,18-25,5,Felony,1,HS Diploma,1
+Black,Male,36-45,2,Felony,1,HS Diploma,1
+White,Female,46+,2,Misdemeanor,0,HS Diploma,1
+Asian,Male,36-45,3,Felony,1,HS Diploma,0
+Hispanic,Male,46+,7,Violent,1,HS Diploma,1
+Black,Male,36-45,6,Violent,0,HS Diploma,1
+White,Male,18-25,4,Violent,1,No HS,1
+White,Male,26-35,7,Felony,1,No HS,0
+White,Male,26-35,3,Misdemeanor,0,HS Diploma,1
+White,Male,46+,2,Violent,1,HS Diploma,1
+White,Male,46+,1,Violent,0,HS Diploma,1
+White,Female,26-35,0,Violent,0,HS Diploma,0
+Black,Male,46+,1,Felony,0,HS Diploma,1
+White,Female,46+,6,Misdemeanor,0,No HS,1
+Black,Male,36-45,5,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,1,Felony,1,College,1
+Hispanic,Male,46+,2,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,46+,3,Violent,0,No HS,1
+White,Female,18-25,5,Misdemeanor,1,College,0
+Black,Male,26-35,2,Misdemeanor,1,HS Diploma,0
+Black,Female,36-45,2,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,18-25,6,Misdemeanor,1,No HS,1
+Black,Male,36-45,5,Felony,1,HS Diploma,1
+White,Male,36-45,7,Felony,1,HS Diploma,1
+White,Male,18-25,5,Misdemeanor,1,HS Diploma,1
+Black,Male,26-35,5,Felony,1,College,1
+Hispanic,Male,46+,4,Misdemeanor,1,HS Diploma,0
+Hispanic,Female,18-25,5,Misdemeanor,0,No HS,1
+White,Male,26-35,6,Felony,1,College,1
+Hispanic,Male,46+,6,Felony,1,No HS,1
+Black,Male,18-25,4,Violent,1,HS Diploma,1
+Black,Female,36-45,0,Misdemeanor,0,HS Diploma,1
+White,Female,18-25,4,Misdemeanor,1,College,0
+Black,Male,46+,0,Violent,1,HS Diploma,0
+Black,Male,46+,1,Misdemeanor,1,College,1
+White,Male,36-45,1,Felony,0,College,0
+Hispanic,Male,26-35,2,Violent,1,No HS,0
+White,Female,46+,1,Felony,0,HS Diploma,1
+Black,Female,46+,4,Misdemeanor,0,HS Diploma,0
+White,Male,26-35,7,Felony,0,No HS,1
+White,Male,36-45,4,Felony,0,No HS,1
+White,Male,36-45,4,Violent,0,College,1
+Black,Male,46+,7,Misdemeanor,1,College,1
+Hispanic,Male,46+,3,Felony,1,HS Diploma,1
+Black,Male,36-45,4,Violent,0,HS Diploma,1
+White,Male,36-45,5,Misdemeanor,1,No HS,0
+White,Male,18-25,2,Misdemeanor,1,No HS,0
+Black,Male,18-25,7,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,2,Felony,0,No HS,0
+White,Male,46+,1,Violent,0,HS Diploma,1
+Hispanic,Female,46+,0,Misdemeanor,1,No HS,1
+White,Male,26-35,5,Misdemeanor,0,HS Diploma,1
+Black,Male,36-45,5,Violent,1,HS Diploma,1
+White,Female,26-35,6,Misdemeanor,1,No HS,0
+Black,Male,46+,5,Misdemeanor,1,HS Diploma,0
+Hispanic,Male,46+,3,Felony,0,HS Diploma,1
+White,Female,36-45,0,Misdemeanor,1,No HS,1
+Hispanic,Male,46+,3,Violent,0,HS Diploma,1
+White,Female,46+,5,Felony,0,HS Diploma,1
+Hispanic,Male,46+,2,Misdemeanor,0,No HS,1
+White,Male,46+,6,Misdemeanor,1,HS Diploma,1
+Hispanic,Female,26-35,7,Felony,0,HS Diploma,1
+White,Male,18-25,7,Violent,1,HS Diploma,1
+White,Male,46+,2,Felony,1,College,0
+Black,Male,46+,3,Misdemeanor,1,HS Diploma,1
+Black,Male,46+,1,Felony,1,HS Diploma,1
+Black,Male,26-35,4,Felony,1,College,1
+White,Male,46+,4,Violent,0,College,1
+Black,Male,26-35,0,Felony,1,HS Diploma,0
+Black,Male,26-35,6,Misdemeanor,1,No HS,1
+Black,Male,18-25,6,Misdemeanor,0,HS Diploma,1
+Black,Female,18-25,2,Misdemeanor,1,HS Diploma,1
+White,Male,36-45,4,Felony,1,HS Diploma,0
+Hispanic,Female,26-35,7,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,26-35,2,Misdemeanor,1,HS Diploma,0
+White,Female,18-25,6,Misdemeanor,0,College,1
+White,Female,18-25,5,Misdemeanor,1,College,1
+Black,Male,18-25,2,Misdemeanor,0,No HS,1
+Black,Male,46+,2,Felony,0,HS Diploma,1
+White,Male,36-45,4,Felony,1,HS Diploma,1
+Hispanic,Female,36-45,4,Violent,1,HS Diploma,1
+Hispanic,Male,18-25,5,Misdemeanor,0,College,1
+White,Male,46+,4,Violent,1,HS Diploma,0
+Hispanic,Male,18-25,3,Misdemeanor,1,HS Diploma,1
+Hispanic,Female,36-45,7,Felony,0,College,1
+Black,Male,36-45,4,Felony,0,No HS,1
+White,Male,26-35,2,Misdemeanor,1,College,0
+White,Male,36-45,5,Felony,0,College,1
+Black,Female,36-45,2,Violent,1,No HS,1
+Black,Male,26-35,6,Violent,1,HS Diploma,1
+Black,Female,26-35,5,Felony,1,HS Diploma,1
+Hispanic,Male,18-25,0,Felony,0,No HS,1
+Hispanic,Male,46+,1,Misdemeanor,0,HS Diploma,0
+Hispanic,Male,46+,3,Misdemeanor,0,College,0
+Hispanic,Male,36-45,6,Misdemeanor,0,No HS,1
+Black,Male,46+,7,Felony,1,No HS,1
+White,Female,36-45,5,Misdemeanor,0,HS Diploma,1
+White,Male,26-35,0,Felony,0,College,0
+White,Female,46+,5,Misdemeanor,0,HS Diploma,0
+Black,Male,46+,3,Felony,1,No HS,1
+White,Female,46+,3,Felony,0,College,1
+White,Male,26-35,2,Felony,0,College,1
+Hispanic,Female,36-45,2,Violent,0,HS Diploma,1
+Asian,Male,18-25,2,Violent,1,No HS,1
+White,Male,26-35,2,Felony,0,HS Diploma,1
+White,Male,46+,0,Misdemeanor,1,No HS,0
+Black,Female,18-25,1,Felony,0,No HS,1
+White,Male,46+,1,Misdemeanor,0,No HS,1
+Hispanic,Male,26-35,5,Felony,0,College,1
+Black,Female,46+,0,Misdemeanor,1,No HS,1
+White,Female,46+,1,Violent,1,HS Diploma,1
+Black,Male,46+,5,Felony,1,No HS,1
+White,Female,26-35,4,Misdemeanor,1,HS Diploma,1
+Asian,Male,26-35,6,Felony,0,HS Diploma,1
+Black,Female,36-45,6,Violent,0,No HS,1
+Hispanic,Male,18-25,4,Misdemeanor,1,College,1
+White,Male,18-25,4,Felony,0,No HS,1
+White,Male,46+,2,Misdemeanor,1,No HS,1
+White,Male,18-25,4,Felony,1,College,0
+Hispanic,Male,26-35,5,Misdemeanor,0,College,1
+Black,Male,36-45,3,Misdemeanor,1,College,1
+Hispanic,Male,18-25,3,Felony,0,College,1
+White,Male,36-45,5,Misdemeanor,0,College,1
+White,Male,26-35,0,Violent,1,College,1
+White,Male,46+,6,Felony,1,No HS,1
+Black,Male,26-35,7,Misdemeanor,0,College,1
+Hispanic,Female,26-35,3,Felony,0,HS Diploma,0
+Black,Female,18-25,5,Violent,0,HS Diploma,1
+White,Male,46+,6,Violent,0,No HS,1
+Black,Female,18-25,7,Misdemeanor,1,HS Diploma,1
+White,Male,36-45,5,Misdemeanor,1,HS Diploma,0
+Black,Male,46+,6,Violent,1,College,1
+White,Male,18-25,0,Misdemeanor,0,HS Diploma,1
+Hispanic,Male,46+,1,Felony,0,No HS,1
+Hispanic,Male,26-35,3,Misdemeanor,0,HS Diploma,1
+Black,Female,18-25,5,Felony,1,HS Diploma,1
+White,Female,36-45,5,Violent,0,College,1
+White,Female,18-25,3,Felony,0,No HS,0
+White,Male,26-35,0,Felony,0,No HS,0
+Black,Female,18-25,3,Misdemeanor,0,HS Diploma,1
+White,Male,36-45,7,Misdemeanor,1,HS Diploma,1
+Hispanic,Male,26-35,0,Misdemeanor,0,HS Diploma,1
+Hispanic,Female,36-45,3,Violent,1,No HS,1
+White,Male,46+,6,Felony,1,HS Diploma,1
+Black,Male,26-35,6,Misdemeanor,1,College,0
+Black,Male,36-45,7,Misdemeanor,0,College,1
+White,Male,26-35,6,Violent,0,HS Diploma,1
+White,Female,36-45,5,Misdemeanor,1,College,1
+White,Female,46+,2,Misdemeanor,1,No HS,0
+Black,Male,18-25,6,Felony,1,HS Diploma,1
+White,Male,36-45,1,Misdemeanor,0,HS Diploma,0
+Black,Male,26-35,6,Misdemeanor,0,College,1
+Hispanic,Male,46+,3,Violent,1,No HS,0
+Black,Male,18-25,5,Felony,0,HS Diploma,1
+Asian,Male,36-45,1,Felony,0,No HS,1
+Black,Female,26-35,3,Felony,1,HS Diploma,1
+White,Male,46+,7,Misdemeanor,1,College,1
+Hispanic,Female,18-25,3,Violent,0,College,1
+White,Male,18-25,6,Misdemeanor,0,HS Diploma,1
+Asian,Male,18-25,6,Violent,0,No HS,1
+Black,Male,46+,2,Misdemeanor,0,College,0
+Asian,Male,46+,7,Violent,1,HS Diploma,1

@@ -1,29 +1,24 @@
 # Python
-venv/
 __pycache__/
 *.pyc
 *.pyo
-.env
+venv/
 *.egg-info/
-dist/
-build/
+.env
 
 # Node
-frontend/node_modules/
-frontend/build/
-frontend/.env
+node_modules/
+build/
+.env
+.env.local
 
-# Data (generated locally)
-backend/data/
+# Data files (large CSVs — keep out of git)
+backend/backend/data/**/*.csv
 
-# OS
-.DS_Store
-Thumbs.db
-
-# VS Code
+# IDE
 .vscode/
-*.code-workspace
+.idea/
 
-# Logs
+# Misc
 *.log
-npm-debug.log*
+*.DS_Store

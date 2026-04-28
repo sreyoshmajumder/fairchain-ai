@@ -1,0 +1,40 @@
+# Git
+.git
+.gitignore
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Local dev files
+.env.local
+*.log
+*.sqlite3
+
+# Large data/model files
+*.pkl
+*.joblib
+*.h5
+*.csv
+*.parquet
+data/
+models/
+
+# Node (if any frontend bleed)
+node_modules/
+
+# IDE
+.vscode/
+.idea/

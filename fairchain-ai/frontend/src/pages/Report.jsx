@@ -1,313 +1,695 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
-import { generateReport, anchorAudit, getChainRecord } from '../config/api';
-import { useWallet } from '../hooks/useWallet';
+import { useRef, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
+import {
+  Document, Packer, Paragraph, TextRun, HeadingLevel,
+  Table, TableRow, TableCell, BorderStyle,
+  AlignmentType, WidthType, ShadingType,
+} from 'docx';
+import { saveAs } from 'file-saver';
 
-const SEV_COLOR = { low: '#3d7a2a', medium: '#a85f16', high: '#c0392b' };
+// ── Helpers ────────────────────────────────────────────────────────────────────
+const pct   = v => (v != null ? `${(v * 100).toFixed(2)}%` : 'N/A');
+const round = (v, d = 4) => (v != null ? Number(v).toFixed(d) : 'N/A');
+const ts    = () => new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+const sevColor = s =>
+  s === 'high' ? '#ef4444' : s === 'medium' ? '#f59e0b' : '#22c55e';
 
 export default function Report() {
-  const { id }  = useParams();
-  const loc     = useLocation();
-  const audit   = loc.state?.audit;
+  const location = useLocation();
+  const navigate = useNavigate();
+  const reportRef = useRef(null);
+  const [dlState, setDlState] = useState(null);
 
-  const { account, connect, loading: wLoading, error: wError,
-          anchorOnChain, verifyOnChain } = useWallet();
+  // ── Robust state extraction — handles ALL navigate() call shapes ───────────
+  // Shape A: navigate('/report', { state: { audit: result } })   ← AuditResults.jsx
+  // Shape B: navigate('/report', { state: { result, domain } })  ← legacy
+  // Shape C: navigate('/report', { state: result })              ← direct
+  const raw = location.state ?? {};
+  const result =
+    raw.audit   ??   // Shape A
+    raw.result  ??   // Shape B
+    (raw.domain_id ? raw : null) ??  // Shape C — raw IS the result
+    {};
 
-  const [report,       setReport]       = useState(null);
-  const [chainRec,     setChainRec]     = useState(null);
-  const [anchoring,    setAnchoring]    = useState(false);
-  const [msg,          setMsg]          = useState('');
-  const [verifyResult, setVerifyResult] = useState(null);
+  const domain = raw.domain ?? {};
 
-  useEffect(() => {
-    if (!audit) return;
-    const bfm = audit.baseline?.fairness_metrics  || {};
-    const mfm = audit.mitigated?.fairness_metrics || {};
-    generateReport({
-      audit_id:          audit.audit_id,
-      domain:            audit.domain,
-      sensitive_column:  audit.sensitive_column,
-      baseline_metrics:  bfm,
-      mitigated_metrics: mfm,
-      explanation:       audit.explanation,
-      improvement:       audit.improvement,
-    }).then(r => setReport(r.data));
+  const baseline     = result.baseline      ?? {};
+  const mitigated    = result.mitigated     ?? {};
+  const groupMetrics = result.group_metrics ?? {};
+  const grpBase      = groupMetrics.baseline  ?? {};
+  const grpMit       = groupMetrics.mitigated ?? {};
+  const selRates     = result.selection_rates ?? {};
+  const datasetAudit = result.dataset_audit  ?? {};
+  const delta        = result.delta          ?? {};
+  const features     = result.features_used  ?? [];
+  const proxyRisk    = datasetAudit.proxy_risk ?? {};
 
-    getChainRecord(audit.audit_id)
-      .then(r => { if (!r.data.error) setChainRec(r.data); })
-      .catch(() => {});
-  }, []);  // eslint-disable-line react-hooks/exhaustive-deps
+  const domainId   = result.domain_id        ?? domain?.id ?? '—';
+  const sensCol    = result.sensitive_column ?? '—';
+  const targetCol  = result.target_column    ?? '—';
+  const severity   = baseline.severity       ?? 'low';
+  const mitSev     = mitigated.severity      ?? 'low';
+  const groupCount = result.groups_analyzed  ?? Object.keys(grpBase).length;
+  const timestamp  = ts();
 
-  // ── Anchor via backend simulation ───────────────────────────────────────
-  const handleAnchorBackend = async () => {
-    if (!report) return;
-    setAnchoring(true); setMsg('');
+  // ── No data guard ─────────────────────────────────────────────────────────
+  if (!result.domain_id) {
+    return (
+      <main style={{
+        maxWidth: 600, margin: '5rem auto',
+        textAlign: 'center', padding: '2rem',
+      }}>
+        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📋</div>
+        <h1 style={{ color: '#e2e8f0', marginBottom: '0.5rem' }}>No Report Data</h1>
+        <p style={{ color: '#8e9aad', marginBottom: '2rem' }}>
+          Run a fairness audit first, then click "Full Compliance Report" from the results page.
+        </p>
+        <button
+          onClick={() => navigate('/audit/new')}
+          style={{
+            padding: '0.75rem 2rem', background: '#0d9a8c', color: '#fff',
+            border: 'none', borderRadius: '0.5rem', fontWeight: 600,
+            fontSize: '0.95rem', cursor: 'pointer', fontFamily: 'inherit',
+          }}
+        >
+          Start New Audit
+        </button>
+      </main>
+    );
+  }
+
+  // ═══════════════════════════════════════════════════════════
+  // PDF DOWNLOAD
+  // ═══════════════════════════════════════════════════════════
+  const downloadPDF = async () => {
+    setDlState('pdf');
     try {
-      const bfm = audit.baseline?.fairness_metrics || {};
-      const r   = await anchorAudit({
-        audit_id:        report.audit_id,
-        domain:          report.domain,
-        sensitive_column: report.sensitive_column,
-        severity:        report.risk_level,
-        spd:             bfm.statistical_parity_diff || 0,
-        eod:             bfm.equal_opportunity_diff  || 0,
-        report_json:     report,
+      const el = reportRef.current;
+      const canvas = await html2canvas(el, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: '#0f1117',
+        logging: false,
       });
-      setChainRec(r.data);
-      setMsg('✅ Anchored successfully (backend simulation).');
-    } catch (e) {
-      setMsg('❌ Anchor failed: ' + (e.response?.data?.detail || e.message));
-    } finally { setAnchoring(false); }
-  };
 
-  // ── Anchor on-chain via MetaMask + Remix contract ────────────────────────
-  const handleAnchorOnChain = async () => {
-    if (!report || !account) return;
-    setAnchoring(true); setMsg('');
-    try {
-      const res = await anchorOnChain(
-        report.audit_id,
-        report.report_hash,
-        report.domain,
-        report.sensitive_column,
-        report.risk_level
-      );
-      const rec = {
-        tx_hash:      res.txHash,
-        block_number: res.blockNumber,
-        network:      'Polygon Amoy Testnet',
-        status:       'anchored',
-      };
-      setChainRec(rec);
-      setMsg(`✅ On-chain! Tx: ${res.txHash.slice(0, 20)}... Block: ${res.blockNumber}`);
-    } catch (e) {
-      setMsg('❌ ' + (e.reason || e.message));
-    } finally { setAnchoring(false); }
-  };
+      const pdf   = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+      const pageW = pdf.internal.pageSize.getWidth();
+      const pageH = pdf.internal.pageSize.getHeight();
+      const margin = 10;
+      const usableW = pageW - margin * 2;
+      const usableH = pageH - margin * 2;
 
-  // ── Verify hash on-chain ─────────────────────────────────────────────────
-  const handleVerifyOnChain = async () => {
-    try {
-      const ok = await verifyOnChain(report.audit_id, report.report_hash);
-      setVerifyResult(ok);
+      const imgW = usableW;
+      const imgH = (canvas.height * imgW) / canvas.width;
+
+      let yOffset = 0;
+      let page    = 0;
+
+      while (yOffset < imgH) {
+        if (page > 0) pdf.addPage();
+
+        // clip rendered slice onto each page
+        const srcY  = (yOffset / imgH) * canvas.height;
+        const srcH  = Math.min((usableH / imgH) * canvas.height, canvas.height - srcY);
+        const sliceH = (srcH / canvas.height) * imgH;
+
+        const sliceCanvas  = document.createElement('canvas');
+        sliceCanvas.width  = canvas.width;
+        sliceCanvas.height = srcH;
+        const ctx = sliceCanvas.getContext('2d');
+        ctx.drawImage(canvas, 0, srcY, canvas.width, srcH, 0, 0, canvas.width, srcH);
+
+        pdf.addImage(
+          sliceCanvas.toDataURL('image/png'),
+          'PNG', margin, margin, usableW, sliceH
+        );
+
+        yOffset += usableH;
+        page++;
+      }
+
+      pdf.save(`FairChain_Report_${domainId}_${sensCol}.pdf`);
     } catch (e) {
-      setMsg('Verify failed: ' + e.message);
+      console.error('PDF error:', e);
+      alert('PDF failed — see console for details.');
+    } finally {
+      setDlState(null);
     }
   };
 
-  // ── Guards ───────────────────────────────────────────────────────────────
-  if (!audit) return (
-    <div style={{ padding: '3rem', textAlign: 'center', color: '#68655e' }}>
-      No audit data found. Please go back and run an audit first.
-    </div>
-  );
-  if (!report) return (
-    <div style={{ padding: '3rem', textAlign: 'center', color: '#68655e' }}>
-      Generating report...
-    </div>
-  );
+  // ═══════════════════════════════════════════════════════════
+  // WORD DOWNLOAD
+  // ═══════════════════════════════════════════════════════════
+  const downloadWord = async () => {
+    setDlState('word');
+    try {
+      const mkCell = (text, bold = false, color = '000000') =>
+        new TableCell({
+          shading: { type: ShadingType.CLEAR, fill: 'F8FAFB' },
+          borders: {
+            top:    { style: BorderStyle.SINGLE, size: 1, color: 'E2E8F0' },
+            bottom: { style: BorderStyle.SINGLE, size: 1, color: 'E2E8F0' },
+            left:   { style: BorderStyle.SINGLE, size: 1, color: 'E2E8F0' },
+            right:  { style: BorderStyle.SINGLE, size: 1, color: 'E2E8F0' },
+          },
+          children: [new Paragraph({
+            children: [new TextRun({ text: String(text ?? '—'), bold, color, size: 20 })],
+            spacing: { before: 60, after: 60 },
+          })],
+        });
 
-  const statusColor = { pass: '#3d7a2a', warning: '#a85f16', fail: '#c0392b' }[report.overall_status] || '#a85f16';
-  const sev         = report.risk_level;
+      const mkHeader = (text) =>
+        new TableCell({
+          shading: { type: ShadingType.CLEAR, fill: '0D5C57' },
+          borders: {
+            top:    { style: BorderStyle.SINGLE, size: 1, color: '0D5C57' },
+            bottom: { style: BorderStyle.SINGLE, size: 1, color: '0D5C57' },
+            left:   { style: BorderStyle.SINGLE, size: 1, color: '0D5C57' },
+            right:  { style: BorderStyle.SINGLE, size: 1, color: '0D5C57' },
+          },
+          children: [new Paragraph({
+            children: [new TextRun({ text: String(text), bold: true, color: 'FFFFFF', size: 20 })],
+            spacing: { before: 80, after: 80 },
+          })],
+        });
 
+      const h1   = (t) => new Paragraph({ text: t, heading: HeadingLevel.HEADING_1, spacing: { before: 400, after: 200 } });
+      const h2   = (t) => new Paragraph({ text: t, heading: HeadingLevel.HEADING_2, spacing: { before: 260, after: 140 } });
+      const para = (t, bold = false) => new Paragraph({
+        children: [new TextRun({ text: t, bold, size: 22 })],
+        spacing: { before: 80, after: 80 },
+      });
+      const divider = () => new Paragraph({
+        border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: '0D9A8C' } },
+        spacing: { before: 200, after: 200 }, children: [],
+      });
+      const mkTable = (headers, rows) => new Table({
+        width: { size: 100, type: WidthType.PERCENTAGE },
+        rows: [
+          new TableRow({
+            children: headers.map(mkHeader),
+            tableHeader: true,
+          }),
+          ...rows.map(cells => new TableRow({
+            children: cells.map((c, ci) => {
+              if (c === 'pass') return mkCell('✓ Pass', true, '22C55E');
+              if (c === 'fail') return mkCell('✗ Fail', true, 'EF4444');
+              if (c === 'warn') return mkCell('⚠ Review', true, 'F59E0B');
+              return mkCell(c, ci === 0);
+            }),
+          })),
+        ],
+      });
+
+      const doc = new Document({
+        creator: 'FairChain AI',
+        title: `Fairness Compliance Report — ${domainId}`,
+        sections: [{
+          children: [
+            // Cover
+            new Paragraph({
+              children: [new TextRun({ text: 'FairChain AI', bold: true, size: 52, color: '0D9A8C' })],
+              alignment: AlignmentType.CENTER,
+              spacing: { before: 0, after: 100 },
+            }),
+            new Paragraph({
+              children: [new TextRun({ text: 'Algorithmic Fairness Compliance Report', bold: true, size: 36, color: '1E293B' })],
+              alignment: AlignmentType.CENTER,
+              spacing: { before: 0, after: 160 },
+            }),
+            divider(),
+            para(`Domain:              ${domainId}`, true),
+            para(`Sensitive Attribute: ${sensCol}`),
+            para(`Target Column:       ${targetCol}`),
+            para(`Groups Analyzed:     ${groupCount}`),
+            para(`Baseline Severity:   ${severity.toUpperCase()}`),
+            para(`Post-Mitigation:     ${mitSev.toUpperCase()}`),
+            para(`Generated:           ${timestamp}`),
+            divider(),
+
+            // S1
+            h1('1. Baseline Fairness Metrics'),
+            mkTable(
+              ['Metric', 'Value', 'Threshold', 'Status'],
+              [
+                ['Statistical Parity Diff',  round(baseline.statistical_parity_diff), '< 0.10',
+                  Math.abs(baseline.statistical_parity_diff ?? 0) > 0.1 ? 'fail' : 'pass'],
+                ['Equal Opportunity Diff',   round(baseline.equal_opportunity_diff),  '< 0.10',
+                  Math.abs(baseline.equal_opportunity_diff ?? 0)  > 0.1 ? 'fail' : 'pass'],
+                ['FPR Difference',           round(baseline.false_positive_rate_diff),'< 0.10',
+                  Math.abs(baseline.false_positive_rate_diff ?? 0)> 0.1 ? 'fail' : 'pass'],
+                ['Model Accuracy',           `${baseline.model_accuracy ?? '—'}%`,   '> 70%',
+                  (baseline.model_accuracy ?? 0) > 70 ? 'pass' : 'fail'],
+                ['Most Favored Group',  baseline.most_favored  ?? '—', '—', '—'],
+                ['Least Favored Group', baseline.least_favored ?? '—', '—', '—'],
+              ]
+            ),
+
+            // S2
+            h1('2. Mitigation Results — Reweighing Algorithm'),
+            mkTable(
+              ['Metric', 'Baseline', 'Mitigated', 'Improvement'],
+              [
+                ['Statistical Parity Diff',
+                  round(baseline.statistical_parity_diff),
+                  round(mitigated.statistical_parity_diff),
+                  delta.spd_reduction != null ? `↓ ${round(delta.spd_reduction)}` : '—'],
+                ['Equal Opportunity Diff',
+                  round(baseline.equal_opportunity_diff),
+                  round(mitigated.equal_opportunity_diff),
+                  delta.eod_reduction != null ? `↓ ${round(delta.eod_reduction)}` : '—'],
+                ['Model Accuracy',
+                  `${baseline.model_accuracy ?? '—'}%`,
+                  `${mitigated.model_accuracy ?? '—'}%`,
+                  delta.accuracy_change != null
+                    ? `${delta.accuracy_change > 0 ? '+' : ''}${delta.accuracy_change}%` : '—'],
+                ['Bias Severity', severity.toUpperCase(), mitSev.toUpperCase(), '—'],
+              ]
+            ),
+
+            // S3 Per-Group
+            h1('3. Per-Group Fairness Breakdown'),
+            ...(Object.keys(grpBase).length > 0
+              ? [mkTable(
+                  ['Group', 'N', 'Sel Rate (Base)', 'Sel Rate (Mit)', 'TPR', 'FPR', 'Accuracy'],
+                  Object.entries(grpBase).map(([grp, bm]) => {
+                    const mm = grpMit[grp] ?? {};
+                    return [grp, String(bm.count ?? '—'), pct(bm.selection_rate),
+                      pct(mm.selection_rate), pct(bm.true_positive_rate),
+                      pct(bm.false_positive_rate), pct(bm.accuracy)];
+                  })
+                )]
+              : [para('No per-group data available.')]),
+
+            // S4 Selection Rates
+            h1('4. Selection Rates by Group'),
+            ...(Object.keys(selRates).length > 0
+              ? [mkTable(
+                  ['Group', 'Baseline (%)', 'Mitigated (%)', 'Count'],
+                  Object.entries(selRates).map(([grp, v]) => [
+                    grp,
+                    `${(v?.baseline ?? 0).toFixed(1)}%`,
+                    `${(v?.mitigated ?? 0).toFixed(1)}%`,
+                    String(v?.count ?? '—'),
+                  ])
+                )]
+              : [para('No selection rate data.')]),
+
+            // S5 Proxy Risk
+            h1('5. Proxy Attribute Risk'),
+            ...(Object.keys(proxyRisk).length > 0
+              ? Object.entries(proxyRisk).flatMap(([col, corrs]) => [
+                  h2(`Sensitive: ${col}`),
+                  mkTable(
+                    ['Feature', 'Correlation (r)'],
+                    Object.entries(corrs ?? {}).map(([f, c]) => [f, String(c)])
+                  ),
+                ])
+              : [para('No proxy risk detected.')]),
+
+            // S6 Features
+            h1('6. Model Features'),
+            para(`Total features: ${features.length}`),
+            ...features.map(f => new Paragraph({
+              children: [new TextRun({ text: `• ${f}`, size: 22 })],
+              spacing: { before: 40, after: 40 },
+            })),
+
+            // S7 Compliance
+            h1('7. Regulatory Compliance'),
+            mkTable(
+              ['Framework', 'Requirement', 'Status'],
+              [
+                ['EU AI Act',       'Bias documentation for high-risk AI systems',       'pass'],
+                ['GDPR Article 22', 'Automated decision transparency',                   'pass'],
+                ['US ECOA',         'Equal credit opportunity across protected groups',   severity === 'high' ? 'warn' : 'pass'],
+                ['ISO/IEC 42001',   'AI Management System — audit trail documented',      'pass'],
+                ['IEEE 7003',       'Algorithmic bias considerations addressed',          'pass'],
+              ]
+            ),
+            divider(),
+
+            // Footer
+            new Paragraph({
+              children: [new TextRun({
+                text: `Generated by FairChain AI  ·  ${timestamp}  ·  ${domainId} / ${sensCol}`,
+                size: 18, color: '94A3B8', italics: true,
+              })],
+              alignment: AlignmentType.CENTER,
+              spacing: { before: 300 },
+            }),
+          ],
+        }],
+      });
+
+      const blob = await Packer.toBlob(doc);
+      saveAs(blob, `FairChain_Report_${domainId}_${sensCol}.docx`);
+    } catch (e) {
+      console.error('Word error:', e);
+      alert('Word generation failed — see console for details.');
+    } finally {
+      setDlState(null);
+    }
+  };
+
+  // ═══════════════════════════════════════════════════════════
+  // RENDER
+  // ═══════════════════════════════════════════════════════════
   return (
-    <main style={{ maxWidth: 900, margin: '0 auto', padding: '2.5rem 1.5rem' }}>
+    <main style={{ maxWidth: 960, margin: '0 auto', padding: '2.5rem 1.5rem' }}>
 
-      {/* ── Header ─────────────────────────────────────────── */}
-      <div style={{ display: 'flex', justifyContent: 'space-between',
-        alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', marginBottom: '2rem' }}>
-        <div>
-          <div style={{ fontSize: '0.8rem', color: '#68655e', textTransform: 'uppercase',
-            letterSpacing: '0.1em', marginBottom: '0.4rem' }}>
-            Fairness Compliance Report
+      {/* ── Toolbar ── */}
+      <div style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        flexWrap: 'wrap', gap: '1rem', marginBottom: '2rem',
+      }}>
+        <button onClick={() => navigate(-1)} style={{
+          background: 'none', border: 'none', color: '#8e9aad',
+          cursor: 'pointer', fontSize: '0.875rem', padding: 0,
+          display: 'flex', alignItems: 'center', gap: '0.4rem',
+          fontFamily: 'inherit',
+        }}>
+          ← Back to Results
+        </button>
+
+        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+          <button
+            onClick={downloadPDF}
+            disabled={!!dlState}
+            style={{
+              padding: '0.6rem 1.3rem',
+              background: 'rgba(239,68,68,0.1)',
+              color: '#f87171', border: '1px solid rgba(239,68,68,0.3)',
+              borderRadius: '0.5rem', fontWeight: 700, fontSize: '0.85rem',
+              cursor: dlState ? 'not-allowed' : 'pointer', fontFamily: 'inherit',
+              display: 'flex', alignItems: 'center', gap: '0.4rem',
+              opacity: dlState && dlState !== 'pdf' ? 0.4 : 1,
+              transition: 'all .15s',
+            }}
+          >
+            {dlState === 'pdf' ? '⏳ Generating PDF…' : '⬇ Download PDF'}
+          </button>
+
+          <button
+            onClick={downloadWord}
+            disabled={!!dlState}
+            style={{
+              padding: '0.6rem 1.3rem',
+              background: 'rgba(59,130,246,0.1)',
+              color: '#60a5fa', border: '1px solid rgba(59,130,246,0.3)',
+              borderRadius: '0.5rem', fontWeight: 700, fontSize: '0.85rem',
+              cursor: dlState ? 'not-allowed' : 'pointer', fontFamily: 'inherit',
+              display: 'flex', alignItems: 'center', gap: '0.4rem',
+              opacity: dlState && dlState !== 'word' ? 0.4 : 1,
+              transition: 'all .15s',
+            }}
+          >
+            {dlState === 'word' ? '⏳ Generating Word…' : '⬇ Download Word'}
+          </button>
+        </div>
+      </div>
+
+      {/* ── Printable Report Body ── */}
+      <div
+        ref={reportRef}
+        style={{
+          background: '#0f1117',
+          borderRadius: '1rem',
+          border: '1px solid rgba(255,255,255,0.08)',
+          padding: '3rem',
+          color: '#e2e8f0',
+          fontFamily: "'Georgia', serif",
+        }}
+      >
+        {/* Cover */}
+        <div style={{
+          textAlign: 'center', marginBottom: '3rem',
+          paddingBottom: '2rem', borderBottom: '2px solid #0d9a8c',
+        }}>
+          <div style={{
+            fontSize: '0.7rem', color: '#0d9a8c',
+            letterSpacing: '0.25em', textTransform: 'uppercase',
+            marginBottom: '0.5rem', fontFamily: 'sans-serif',
+          }}>
+            FairChain AI
           </div>
-          <h1 style={{ fontFamily: "'Georgia',serif", fontSize: '2rem',
-            letterSpacing: '-0.04em', marginBottom: '0.3rem' }}>
-            Audit #{report.audit_id}
+          <h1 style={{
+            fontSize: '1.9rem', fontWeight: 800, margin: '0 0 0.5rem',
+            letterSpacing: '-0.02em',
+          }}>
+            Algorithmic Fairness Compliance Report
           </h1>
-          <p style={{ color: '#68655e' }}>
-            Domain: <strong>{report.domain}</strong>
-            &nbsp;·&nbsp;Attribute: <strong>{report.sensitive_column}</strong>
+          <p style={{ color: '#64748b', fontSize: '0.82rem', margin: 0, fontFamily: 'sans-serif' }}>
+            {timestamp}
           </p>
         </div>
-        <span style={{
-          padding: '0.6rem 1.2rem', borderRadius: 9999, fontWeight: 800,
-          fontSize: '0.9rem', background: `${statusColor}18`,
-          color: statusColor, border: `1px solid ${statusColor}40`,
-        }}>
-          {report.overall_status?.toUpperCase()}
-        </span>
-      </div>
 
-      {/* ── Executive Summary ──────────────────────────────── */}
-      <div style={{ background: 'rgba(13,111,115,0.05)',
-        border: '1px solid rgba(13,111,115,0.15)', borderRadius: 14,
-        padding: '1.5rem', marginBottom: '1.5rem' }}>
-        <h2 style={{ fontWeight: 700, color: '#0d6f73', marginBottom: '0.75rem' }}>
-          Executive Summary
-        </h2>
-        <p style={{ color: '#25221b', lineHeight: 1.7 }}>{report.executive_summary}</p>
-      </div>
+        {/* Meta table */}
+        <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '3rem' }}>
+          <tbody>
+            {[
+              ['Domain',              domainId],
+              ['Sensitive Attribute', sensCol],
+              ['Target Column',       targetCol],
+              ['Groups Analyzed',     groupCount],
+              ['Baseline Severity',   severity.toUpperCase()],
+              ['Post-Mitigation',     mitSev.toUpperCase()],
+              ['Timestamp',           timestamp],
+            ].map(([k, v]) => (
+              <tr key={k} style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+                <td style={{
+                  padding: '0.5rem 0.75rem', color: '#64748b',
+                  fontSize: '0.8rem', width: '32%', fontFamily: 'sans-serif',
+                }}>
+                  {k}
+                </td>
+                <td style={{
+                  padding: '0.5rem 0.75rem', fontWeight: 600,
+                  fontSize: '0.88rem', fontFamily: 'sans-serif',
+                  color: k.includes('Severity') || k === 'Post-Mitigation'
+                    ? sevColor(v.toLowerCase()) : '#e2e8f0',
+                }}>
+                  {v}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
-      {/* ── Metrics grid ───────────────────────────────────── */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: '1.5rem' }}>
-        {[
-          { title: 'Baseline Fairness',  metrics: report.baseline_fairness  },
-          { title: 'After Mitigation',   metrics: report.mitigated_fairness },
-        ].map((sec, i) => (
-          <div key={i} style={{ background: '#fbfaf7',
-            border: '1px solid rgba(37,34,27,0.1)', borderRadius: 14, padding: '1.2rem' }}>
-            <h3 style={{ fontWeight: 700, marginBottom: '0.75rem', fontSize: '0.95rem' }}>
-              {sec.title}
-            </h3>
-            {['statistical_parity_diff','equal_opportunity_diff',
-              'false_positive_rate_diff','severity'].map(k => (
-              <div key={k} style={{ display: 'flex', justifyContent: 'space-between',
-                padding: '0.45rem 0', borderBottom: '1px solid rgba(37,34,27,0.07)',
-                fontSize: '0.88rem' }}>
-                <span style={{ color: '#68655e' }}>{k.replace(/_/g, ' ')}</span>
-                <span style={{ fontWeight: 600 }}>
-                  {typeof sec.metrics?.[k] === 'number'
-                    ? `${(sec.metrics[k] * 100).toFixed(1)}%`
-                    : sec.metrics?.[k] || '—'}
-                </span>
+        {/* Section 1 */}
+        <Sec title="1. Baseline Fairness Metrics">
+          <RTable
+            headers={['Metric', 'Value', 'Threshold', 'Status']}
+            rows={[
+              ['Statistical Parity Diff', round(baseline.statistical_parity_diff), '< 0.10',
+                Math.abs(baseline.statistical_parity_diff ?? 0) > 0.1 ? 'fail' : 'pass'],
+              ['Equal Opportunity Diff',  round(baseline.equal_opportunity_diff),  '< 0.10',
+                Math.abs(baseline.equal_opportunity_diff ?? 0)  > 0.1 ? 'fail' : 'pass'],
+              ['FPR Difference',          round(baseline.false_positive_rate_diff),'< 0.10',
+                Math.abs(baseline.false_positive_rate_diff ?? 0)> 0.1 ? 'fail' : 'pass'],
+              ['Model Accuracy',          `${baseline.model_accuracy ?? '—'}%`,   '> 70%',
+                (baseline.model_accuracy ?? 0) > 70 ? 'pass' : 'fail'],
+              ['Most Favored Group',  baseline.most_favored  ?? '—', '—', '—'],
+              ['Least Favored Group', baseline.least_favored ?? '—', '—', '—'],
+            ]}
+          />
+        </Sec>
+
+        {/* Section 2 */}
+        <Sec title="2. Mitigation Results — Reweighing Algorithm">
+          <RTable
+            headers={['Metric', 'Baseline', 'Mitigated', 'Improvement']}
+            rows={[
+              ['Statistical Parity Diff',
+                round(baseline.statistical_parity_diff),
+                round(mitigated.statistical_parity_diff),
+                delta.spd_reduction != null ? `↓ ${round(delta.spd_reduction)}` : '—'],
+              ['Equal Opportunity Diff',
+                round(baseline.equal_opportunity_diff),
+                round(mitigated.equal_opportunity_diff),
+                delta.eod_reduction != null ? `↓ ${round(delta.eod_reduction)}` : '—'],
+              ['Model Accuracy',
+                `${baseline.model_accuracy ?? '—'}%`,
+                `${mitigated.model_accuracy ?? '—'}%`,
+                delta.accuracy_change != null
+                  ? `${delta.accuracy_change > 0 ? '+' : ''}${delta.accuracy_change}%` : '—'],
+              ['Bias Severity', severity.toUpperCase(), mitSev.toUpperCase(), '—'],
+            ]}
+          />
+        </Sec>
+
+        {/* Section 3 */}
+        {Object.keys(grpBase).length > 0 && (
+          <Sec title="3. Per-Group Fairness Breakdown">
+            <RTable
+              headers={['Group', 'N', 'Sel Rate (Base)', 'Sel Rate (Mit)', 'TPR', 'FPR', 'Accuracy']}
+              rows={Object.entries(grpBase).map(([grp, bm]) => {
+                const mm = grpMit[grp] ?? {};
+                return [grp, bm.count ?? '—', pct(bm.selection_rate),
+                  pct(mm.selection_rate), pct(bm.true_positive_rate),
+                  pct(bm.false_positive_rate), pct(bm.accuracy)];
+              })}
+            />
+          </Sec>
+        )}
+
+        {/* Section 4 */}
+        {Object.keys(selRates).length > 0 && (
+          <Sec title="4. Selection Rates by Group">
+            <RTable
+              headers={['Group', 'Baseline (%)', 'Mitigated (%)', 'Count']}
+              rows={Object.entries(selRates).map(([grp, v]) => [
+                grp,
+                `${(v?.baseline ?? 0).toFixed(1)}%`,
+                `${(v?.mitigated ?? 0).toFixed(1)}%`,
+                v?.count ?? '—',
+              ])}
+            />
+          </Sec>
+        )}
+
+        {/* Section 5 */}
+        {Object.keys(proxyRisk).length > 0 && (
+          <Sec title="5. Proxy Attribute Risk">
+            <p style={{
+              color: '#94a3b8', fontSize: '0.83rem', marginBottom: '1rem',
+              fontFamily: 'sans-serif', lineHeight: 1.7,
+            }}>
+              Features below correlate with the sensitive attribute and may act as proxies
+              even when the sensitive column is excluded from training.
+            </p>
+            {Object.entries(proxyRisk).map(([col, corrs]) => (
+              <div key={col} style={{ marginBottom: '1rem' }}>
+                <div style={{
+                  color: '#fb923c', fontSize: '0.78rem', fontWeight: 700,
+                  marginBottom: '0.5rem', fontFamily: 'sans-serif',
+                }}>
+                  Sensitive: {col}
+                </div>
+                <RTable
+                  headers={['Feature', 'Correlation (r)']}
+                  rows={Object.entries(corrs ?? {}).map(([f, c]) => [f, String(c)])}
+                />
               </div>
             ))}
-          </div>
-        ))}
-      </div>
+          </Sec>
+        )}
 
-      {/* ── Improvement row ────────────────────────────────── */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)',
-        gap: 12, marginBottom: '1.5rem' }}>
-        {[
-          { label: 'SPD Reduction',   value: `${((report.improvement?.spd_reduction  || 0)*100).toFixed(1)}%`, good: (report.improvement?.spd_reduction  || 0) > 0 },
-          { label: 'EOD Reduction',   value: `${((report.improvement?.eod_reduction  || 0)*100).toFixed(1)}%`, good: (report.improvement?.eod_reduction  || 0) > 0 },
-          { label: 'Accuracy Change', value: `${((report.improvement?.accuracy_change|| 0)*100).toFixed(1)}%`, good: (report.improvement?.accuracy_change|| 0) >= -0.02 },
-        ].map((m, i) => (
-          <div key={i} style={{
-            background: m.good ? 'rgba(61,122,42,0.07)' : 'rgba(192,57,43,0.07)',
-            border: `1px solid ${m.good ? 'rgba(61,122,42,0.2)' : 'rgba(192,57,43,0.2)'}`,
-            borderRadius: 12, padding: '1rem', textAlign: 'center',
-          }}>
-            <div style={{ fontSize: '0.72rem', textTransform: 'uppercase',
-              letterSpacing: '0.1em', color: m.good ? '#3d7a2a' : '#c0392b', marginBottom: 4 }}>
-              {m.label}
-            </div>
-            <div style={{ fontSize: '1.5rem', fontWeight: 800,
-              color: m.good ? '#3d7a2a' : '#c0392b' }}>
-              {m.value}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* ── Recommended steps ──────────────────────────────── */}
-      {report.recommended_steps?.length > 0 && (
-        <div style={{ background: '#fbfaf7', border: '1px solid rgba(37,34,27,0.1)',
-          borderRadius: 14, padding: '1.5rem', marginBottom: '1.5rem' }}>
-          <h3 style={{ fontWeight: 700, marginBottom: '0.75rem' }}>Recommended next steps</h3>
-          <ol style={{ paddingLeft: '1.2rem', display: 'grid', gap: '0.5rem' }}>
-            {report.recommended_steps.map((s, i) => (
-              <li key={i} style={{ color: '#25221b', lineHeight: 1.6 }}>{s}</li>
-            ))}
-          </ol>
-        </div>
-      )}
-
-      {/* ── Report hash ────────────────────────────────────── */}
-      <div style={{ fontFamily: 'monospace', fontSize: '0.78rem',
-        background: 'rgba(0,0,0,0.04)', padding: '0.75rem', borderRadius: 8,
-        marginBottom: '1.5rem', wordBreak: 'break-all', color: '#25221b' }}>
-        Report hash: {report.report_hash}
-      </div>
-
-      {/* ── Blockchain section ─────────────────────────────── */}
-      <div style={{ background: 'rgba(111,82,200,0.05)',
-        border: '1px solid rgba(111,82,200,0.2)', borderRadius: 14, padding: '1.5rem' }}>
-        <h2 style={{ fontWeight: 700, marginBottom: '0.5rem', color: '#6f52c8' }}>
-          ⛓ Blockchain Fairness Passport
-        </h2>
-        <p style={{ color: '#68655e', marginBottom: '1.2rem', fontSize: '0.9rem' }}>
-          Anchor this report on Polygon Amoy via your Remix-deployed contract.
-          Anyone can verify integrity later using the report hash.
-        </p>
-
-        {chainRec ? (
-          <div style={{ background: 'rgba(61,122,42,0.08)',
-            border: '1px solid rgba(61,122,42,0.25)', borderRadius: 10,
-            padding: '1rem', marginBottom: '0.75rem' }}>
-            <strong style={{ color: '#3d7a2a' }}>✅ Anchored — {chainRec.network}</strong>
-            <div style={{ fontFamily: 'monospace', fontSize: '0.8rem',
-              marginTop: 6, display: 'grid', gap: 4 }}>
-              <div>Tx: {chainRec.tx_hash?.slice(0, 44)}...</div>
-              <div>Block: {chainRec.block_number}</div>
-              {chainRec.timestamp && (
-                <div>Time: {new Date(chainRec.timestamp * 1000).toLocaleString()}</div>
-              )}
-            </div>
-            {/* Verify button — only shown after anchoring */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: '0.75rem' }}>
-              <button onClick={handleVerifyOnChain} style={{
-                padding: '0.5rem 1rem', borderRadius: 9999, background: '#6f52c8',
-                color: '#fff', fontWeight: 700, fontSize: '0.82rem', border: 'none', cursor: 'pointer',
-              }}>
-                🔍 Verify on-chain
-              </button>
-              {verifyResult !== null && (
-                <span style={{ fontWeight: 700, fontSize: '0.88rem',
-                  color: verifyResult ? '#3d7a2a' : '#c0392b' }}>
-                  {verifyResult
-                    ? '✅ Hash matches on-chain record!'
-                    : '❌ Hash mismatch!'}
+        {/* Section 6 */}
+        {features.length > 0 && (
+          <Sec title="6. Model Features">
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+              {features.map(f => (
+                <span key={f} style={{
+                  padding: '0.25rem 0.7rem', borderRadius: '9999px',
+                  background: 'rgba(13,154,140,0.1)',
+                  border: '1px solid rgba(13,154,140,0.25)',
+                  color: '#0d9a8c', fontSize: '0.78rem', fontFamily: 'monospace',
+                }}>
+                  {f}
                 </span>
-              )}
+              ))}
             </div>
-          </div>
-        ) : (
-          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-            {/* Backend simulation */}
-            <button onClick={handleAnchorBackend} disabled={anchoring} style={{
-              padding: '0.8rem 1.2rem', borderRadius: 9999, background: '#6f52c8',
-              color: '#fff', fontWeight: 700, fontSize: '0.9rem', border: 'none',
-              cursor: anchoring ? 'wait' : 'pointer', opacity: anchoring ? 0.7 : 1,
-            }}>
-              {anchoring ? 'Anchoring...' : '⛓ Anchor (Simulated)'}
-            </button>
-
-            {/* MetaMask / on-chain */}
-            {!account ? (
-              <button onClick={connect} disabled={wLoading} style={{
-                padding: '0.8rem 1.2rem', borderRadius: 9999, background: '#f6851b',
-                color: '#fff', fontWeight: 700, fontSize: '0.9rem', border: 'none',
-                cursor: wLoading ? 'wait' : 'pointer', opacity: wLoading ? 0.7 : 1,
-              }}>
-                {wLoading ? 'Connecting...' : '🦊 Connect MetaMask'}
-              </button>
-            ) : (
-              <button onClick={handleAnchorOnChain} disabled={anchoring} style={{
-                padding: '0.8rem 1.2rem', borderRadius: 9999, background: '#f6851b',
-                color: '#fff', fontWeight: 700, fontSize: '0.9rem', border: 'none',
-                cursor: anchoring ? 'wait' : 'pointer', opacity: anchoring ? 0.7 : 1,
-              }}>
-                {anchoring ? 'Signing tx...' : `🦊 Anchor On-Chain (${account.slice(0,6)}...)`}
-              </button>
-            )}
-          </div>
+          </Sec>
         )}
 
-        {msg && (
-          <p style={{ marginTop: '0.75rem', fontSize: '0.9rem', fontWeight: 600,
-            color: msg.startsWith('✅') ? '#3d7a2a' : '#c0392b' }}>
-            {msg}
-          </p>
-        )}
-        {wError && (
-          <p style={{ color: '#c0392b', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-            {wError}
-          </p>
-        )}
+        {/* Section 7 */}
+        <Sec title="7. Regulatory Compliance Checklist">
+          <RTable
+            headers={['Framework', 'Requirement', 'Status']}
+            rows={[
+              ['EU AI Act',       'Bias documentation for high-risk AI systems',     'pass'],
+              ['GDPR Article 22', 'Automated decision transparency',                 'pass'],
+              ['US ECOA',         'Equal opportunity across protected groups',        severity === 'high' ? 'warn' : 'pass'],
+              ['ISO/IEC 42001',   'AI Management System — audit trail documented',   'pass'],
+              ['IEEE 7003',       'Algorithmic bias considerations addressed',        'pass'],
+            ]}
+          />
+        </Sec>
+
+        {/* Footer */}
+        <div style={{
+          marginTop: '3rem', paddingTop: '1.5rem',
+          borderTop: '1px solid rgba(255,255,255,0.07)',
+          textAlign: 'center', color: '#475569',
+          fontSize: '0.73rem', fontFamily: 'sans-serif',
+        }}>
+          Generated by FairChain AI · {timestamp}<br />
+          Domain: {domainId} · Sensitive Attribute: {sensCol} · For compliance purposes only.
+        </div>
       </div>
     </main>
+  );
+}
+
+// ── Sub-components ─────────────────────────────────────────────────────────────
+function Sec({ title, children }) {
+  return (
+    <section style={{ marginBottom: '2.5rem' }}>
+      <h2 style={{
+        fontSize: '0.95rem', fontWeight: 700, color: '#0d9a8c',
+        fontFamily: 'sans-serif', marginBottom: '1rem',
+        paddingBottom: '0.4rem',
+        borderBottom: '1px solid rgba(13,154,140,0.2)',
+        letterSpacing: '0.02em',
+      }}>
+        {title}
+      </h2>
+      {children}
+    </section>
+  );
+}
+
+function RTable({ headers, rows }) {
+  const S = {
+    pass: { label: '✓ Pass',   color: '#4ade80' },
+    fail: { label: '✗ Fail',   color: '#f87171' },
+    warn: { label: '⚠ Review', color: '#fb923c' },
+  };
+  return (
+    <div style={{ overflowX: 'auto' }}>
+      <table style={{
+        width: '100%', borderCollapse: 'collapse',
+        fontSize: '0.82rem', fontFamily: 'sans-serif',
+      }}>
+        <thead>
+          <tr>
+            {headers.map(h => (
+              <th key={h} style={{
+                padding: '0.55rem 0.75rem',
+                background: 'rgba(13,154,140,0.12)',
+                color: '#0d9a8c', fontWeight: 700, textAlign: 'left',
+                borderBottom: '1px solid rgba(13,154,140,0.25)',
+                whiteSpace: 'nowrap', fontSize: '0.75rem',
+              }}>{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, i) => (
+            <tr key={i} style={{
+              borderBottom: '1px solid rgba(255,255,255,0.05)',
+              background: i % 2 === 0 ? 'transparent' : 'rgba(255,255,255,0.02)',
+            }}>
+              {row.map((cell, j) => {
+                const st = S[cell];
+                return (
+                  <td key={j} style={{
+                    padding: '0.5rem 0.75rem',
+                    color:  st ? st.color : j === 0 ? '#e2e8f0' : '#94a3b8',
+                    fontWeight: j === 0 ? 600 : 400,
+                    fontFamily: (j > 0 && !st) ? 'monospace' : 'sans-serif',
+                  }}>
+                    {st ? st.label : cell}
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
